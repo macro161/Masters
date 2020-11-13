@@ -17,7 +17,7 @@
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Informatikos institutas}
-\papertype{Magistro baigiamasis darbas}
+\papertype{Magistro darbo planas}
 \title{Formalių specifikacijų taikymas projektuojant paskirstytas sistemas}
 \titleineng{Applying Formal Specifications to Design Distributed Systems}
 \author{Matas Savickis}
@@ -31,70 +31,62 @@
 \begin{document}
 \maketitle
 
-%% Padėkų skyrius
-% \sectionnonumnocontent{}
-% \vspace{7cm}
-% \begin{center}
-%     Padėkos asmenims ir/ar organizacijoms
-% \end{center}
-
-\sectionnonumnocontent{Santrauka}
-	Darbe bus sudaroma, nagrinėjama ir įrodynėjama Apache Kafka platformos tam tikrų dalių formali specifikacija.
-	Specifikacija bus rašoma su TLA+ formalaus specifikavimo kalba.
-	Darbe bus išskirtos aprašomos sistemos dalys ir kodėl buvo pasirinkta aprašinėti tas dalis.
-	Formalios specifikacivikacijos kalba TLA+ bus aprašomos šios dalys ir sudarytos teoremos įrodomos.
-	Tikimasi įrodyti arba paneigti sistemos sistemos korektiškumą arba surasti sistemos klaidas taikant parašytą specifikaciją.
-	
- 
-	
-
-% Nurodomi iki 5 svarbiausių temos raktinių žodžių (terminų).
-% Vienas terminas gali susidėti iš kelių žodžių.
-\raktiniaizodziai{Apache Kafka, TLA+, Formalios specifikacijos, Paskirstytos sistemos}   
-
-
-\sectionnonumnocontent{Summary}
-	The paper will compile, analyze and prove that the Apache Kafka platform is a formal specification of certain parts.
-	The specification will be written in TLA + formal specification language.
-	The paper will highlight the described parts of the system and why it was chosen to describe those parts.
-	In the language of formal specification TLA +, the following parts will be described and the theorems formed will be proved.
-	It is expected to prove or disprove the correctness of the system system or to find system errors using the written specification.
-
 \tableofcontents
 
-\sectionnonum{Įvadas}
-	Vis daugiau naujų sistemų yra kuriamos taikant paskirstytų sistemų principus.
-	Tokios sistemos dažniausiai kuriamos pasinaudojant jau egzistuojančia paskirstyto srauto platformas.
-	Viena iš populiariausių šiuo metų yra Apache Kafka platforma.
-	Kafka platforma naudoja ir pasitiki daugumas kompanijų.
-	Kadangi nuo korektiško Kafka veikimo priklauso tiek daug sistemų, kuriomis kasdien daugojasi daugybė žmonių, yra naudinga užtikrinti kokybišką sistemos veikimą.
-	Vienas iš būtų tai padaryti yra atlikinėti testus su sistema, tačiau tai nevisuomet atskleidžia subtilesnius, architektūrinius sistemų sutrikimus.
-	Siekiant surasti ir ištaisyti sunkiau pastebimas sisteminias klaidas yra naudojamos formalios specifikacijos.
-	Kaip rodo praktinė patirtis, taikant formalias specifikacijas įmanoma surasti prieš tai nesurastų sistemos klaidų.
-	Viena iš populiariausių formalaus specifikavimo kalbų yra TLA+, ją ir naudosime šiame darbe.
- 
+	\section{Įvadas}
+
+		
+
+
+ 		Apache Kafka
+
+
+		Apache Kafka testavimas
+
+
+		Formalūs metodai
+
+
+		TLA+
+
+
+		TLA+ taikymo sėkmės istorijos
+
+
+		Darytas researchas apie Apache Kafka
+
+	\section{Temos aktualumas bei naujumas}
+		Iki šiol, kiek mums žinoma, Apache Kafka platforma buvo specifikuota tik vieną kartą neakademiniame kontekste ir sukurta specifikacija atnešė naudos padėdama surasti sistemines klaidas.
+		Dėl papildomų Apache Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo manome, kad papildomi tyrimai Apache Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
+		Apache Kafka platforma turi daug naudotojų, todėl tolimesnis kokybės užtikrinimas Apache Kafka platformoje atneštų naudą.
+		Sėkmingai identifikavus paskirstytų sistemų architektūrinius šablonus būtų galima įrodyti korektiškumą daug didesniai pasikirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas paskirstytas sistemas. 
 	
+	\section{Darbo tikslas}
+		Pagerinti Apache Kafka platformos kokybę surandant sisteminių klaidų arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.
+		Įrodyti didenės pasikirstytų sistemų aibės korektiškumas specifikuojant architektūrinius šablonus.
 	
+	\section{Uždaviniai}
+		\begin{enumerate}
+			\item{Išnagrinėti literatūrą susijusią su formaliais metodais, TLA+ specifikavimo kalba bei Apache Kafka patlforma.}
+			\item{Išskirti Apache Kafka platformos modulius, kurie bus formaliai specifikuoti.}
+			\item{Specifikuoti išskirtas Apache Kafka platformos dalis naudojant TLA+ specifikavimo kalbą.}
+			\item{Įvertinti sukurtos formalios specifikacijos korektiškumą.}
+			\item{Įvertinti, ar pagal sukurtą specifikaciją Apache Kafka platforma veikia korektiškai.}
+			\item{Esant poreikiui įrodyti specifikacijos teoremas.}
+			\item{Patikrinti ar Apache Kafka implementaciją atitinka specifikaciją.}
+			\item{Apache Kafka platformoje surasti architektūrinius šablonus, kurie yra taikoki ir kituose paskirstytuose sistemose ir juos specifikuoti.}
+		\end{enumerate}
+	
+	\section{Laukiami rezultatai}
+		\begin{enumerate}
+			\item{Pasirinktų Apache Kafka modulių specifikacija.}
+			\item{Įrodymas apie specifikacijos korektiškumą.}
+			\item{Apache Kafka parašytos specifikacijos ir implementacijos sutapimo įvertinimas.}
+			\item{Išskirti ir specifikuoti paskirstytų sistemų šablonai taikomi kitose platformose.}
+		\end{enumerate}
+	
+	\printbibliography[heading=bibintoc] 
 
-\section{Temos aktualumas bei naujumas}
-	Apache Kafka yra naudojam daubybėje sistemų todėl yra tikslas užtikrinti, kad Kafka veiktų korektiškais.
-	Jau buvo pademonstruota, kad taikant TLA+ kalbą rašant formalias specifikacijas Kafka sistemoje buvo rasta klaidų, kurių ištaisymas garantavo patikimesnį Kafka veikimą.
-	Šiuo darbus bus siekiama pratęsti jau Apache Kafka specificikacija ir surasti sistemos klaidų arba įrodyti, kad aprašomi sistemos moduliai veikia korektiškai.
-
-\section{Darbo tikslas}
-	Formaliai aprašant Apache Kafka atskirų modulių veikimą įrodyti sistemos veikimo korektiškumą arba surasti sisteminių klaidų.
-	Surasti pasikirstytų sistemų veikimų šablonų ir verifikuoti juos.
-
-\section{Uždaviniai}
-	\begin{enumerate}
-		\item{}
-	\end{enumerate}
-
-\section{Laukiami rezultatai}
-
-
-\printbibliography[heading=bibintoc] 
-\sectionnonum{Santrumpos}
 
 \appendix
 
