@@ -32,10 +32,10 @@
 \maketitle
 
 \tableofcontents
-\section{Planas}
-	\subsection{Įvadas}
 
-		Šiais laikais daugumas didelių programinių sistemų yra kuriamos paskirstytų sistemų principu.
+	\section{Įvadas}
+
+		Šiais laikais daugumas didelių programinių sistemų yra kuriamos paskirstytų sistemų principu\cite{mcr}.
 		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai paskirstyti gaunamus duomenis sistemoje.
 		Vienas iš būdų tai padaryti yra naudoti paskirstytų srautinių duomenų platformomis.
 		Viena iš populiariausių šiuo metu yra Apache Kafka platforma.
@@ -82,19 +82,19 @@
 		Pristatyme buvo parodyta, kad pritaikius TLA\textsuperscript{+} specifikuojant Apache Kafka duomenų replikavimo algoritmą buvo surastos ir pataisytos 3 retais atsitinkančios programinės klaidos.
 		Keletas programinių klaidų buvo surastos ir pataisytos taisant jau minėtas tris pradines klaidas.
 
-	\subsection{Temos aktualumas bei naujumas}
+	\section{Temos aktualumas bei naujumas}
 		Iki šiol, kiek mums žinoma, Apache Kafka platforma buvo specifikuota tik vieną kartą neakademiniame kontekste ir sukurta specifikacija atnešė naudos padėdama surasti sistemines klaidas.
-		Panašią mokslininkų sėkmę matome ir Amazon Web Service bei MongoDB formalios specifikacijos sudarymo tyrimuose.
+		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose.
 		Dėl papildomų Apache Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo paskirstytose sistemose manome, kad papildomi tyrimai Apache Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
 		Šiuo metu Apache Kafka sisteminių klaidų registre yra išspręstų  ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos korektiškai.
 		Apache Kafka platforma turi daug naudotojų, todėl tolimesnis kokybės užtikrinimas Apache Kafka platformoje atneštų naudą.
 		Sėkmingai identifikavus paskirstytų sistemų architektūrinius šablonus būtų galima įrodyti korektiškumą daug didesnei paskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas paskirstytas sistemas. 
 	
-	\subsection{Darbo tikslas}
+	\section{Darbo tikslas}
 		Pagerinti Apache Kafka platformos kokybę surandant sisteminių klaidų arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.
 		Įrodyti didesnės paskirstytų sistemų aibės algoritmų korektiškumą specifikuojant architektūrinius šablonus.
 	
-	\subsection{Uždaviniai}
+	\section{Uždaviniai}
 		\begin{enumerate}
 			\item{Išnagrinėti literatūrą susijusią su formaliais metodais, TLA\textsuperscript{+} specifikavimo kalba bei Apache Kafka patlforma.}
 			\item{Išskirti Apache Kafka platformos modulius, kurie bus formaliai specifikuoti.}
@@ -106,7 +106,7 @@
 			\item{Apache Kafka platformoje surasti architektūrinius šablonus, kurie yra taikoki ir kituose paskirstytuose sistemose ir juos specifikuoti.}
 		\end{enumerate}
 	
-	\subsection{Laukiami rezultatai}
+	\section{Laukiami rezultatai}
 		\begin{enumerate}
 			\item{Pasirinktų Apache Kafka modulių specifikacija.}
 			\item{Įrodymas apie specifikacijos korektiškumą.}
