@@ -33,7 +33,7 @@
 
 \tableofcontents
 
-	\section{Įvadas}
+	\sectionnonum{Įvadas}
 
 		Šiais laikais kai kurios programų sistemos yra kuriamos išskirstytų sistemų principu\cite{mcr}.
 		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis.
@@ -41,7 +41,7 @@
 		Viena iš tokių platformų yra Apache Kafka.
 
 
- 		Apache Kafka buvo pradėta kurti kompanijos LinkedIn, siekiant sukurti centralizuotą įvykių valdymo platformą, skirtą internetinių duomenų integravimo užduotims atlikti.
+ 		Apache Kafka buvo pradėta kurti kompanijos LinkedIn. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
 		2012 metais Apache Kafka sistema buvo perduota į Apache Software Foundation tolesniam vystymui.
 		Šiuo metu Apache Kafka platforma yra žinučių siuntimo sistema, kurios dizainas pasižymi lengvu plečiamumu, patvarumu, patikimumu ir greičiu.
 		Duomenys Apache Kafka platformoje yra išsaugomi saugiu, trukdžiams atspariu būdu.
@@ -49,16 +49,16 @@
 		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiuose kaip žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų.
 
 
-		Norint užtikrinti Apache Kafka platformos kokybę, kūrėjais yra įgyvendinę skirtingų testų.
+		Norint užtikrinti Apache Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų.
 		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo.
 		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
 		Net ir paskyrus daugiau resursų testavimui, netrivialiuose sistemose, tokiose kaip Apache Kafka, pilnas sistemos testavimas yra neįmanomas.
 		Todėl norint atrasti subtilesnius sisteminius sutrikimus tenka naudoti kitus metodus.
-		Vienas iš tokių metodų yra formalios specifikacijos.
+		Vienas iš tokių metodų yra formalus verifikavimas.
 
 
-		Formalios specifikacijos yra matematinės technikos skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą naudojant griežtas ir veiksmingas priemones.
-		Turint formalią specifikaciją galima ja pasinaudoti parodant, kad sistemos dizainas yra adekvatus pagal sukurtą specifikaciją.
+		Formalios specifikacijos yra matematinės technikos, skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą, naudojant griežtas ir veiksmingas priemones.
+		Turint formalią specifikaciją galima ja pasinaudoti formaliai verifikuojant ir parodant, kad sistemos dizainas yra adekvatus pagal sukurtą specifikaciją.
 		Tai leidžia objektyviai koreguoti sistemos dizainą dar prieš pradedant ją įgyvendinti.
 		Formalios specifikacijos sudaromos pasinaudojant tam tikra kalba arba įrankiu.
 		Viena iš tokių formalaus specifikavimo kalbų yra TLA\textsuperscript{+}.
@@ -100,7 +100,7 @@
 			\item{Specifikuoti išskirtas Apache Kafka platformos dalis naudojant TLA\textsuperscript{+} specifikavimo kalbą.}
 			\item{Įvertinti, ar pagal sukurtą specifikaciją Apache Kafka platforma veikia adekvačiai.}
 			\item{Esant poreikiui įrodyti specifikacijos teoremas.}
-			\item{Patikrinti ar Apache Kafka įgyvendinimas atitinka specifikaciją.}
+			\item{Patikrinti ar Apache Kafka įgyvendinimas atitinka specifikaciją verifikuojant įvykiu žurnalus.}
 			\item{Apache Kafka platformoje surasti architektūrinius šablonus, kurie yra taikoki ir kituose išskirstytuose sistemose, bei juos specifikuoti.}
 		\end{enumerate}
 	
@@ -113,9 +113,5 @@
 		\end{enumerate}
 	
 	\printbibliography[heading=bibintoc] 
-
-
-\appendix
-
 
 \end{document}
