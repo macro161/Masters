@@ -1,12 +1,8 @@
--Istrinti recenzenta
--programines sistemos
--Isskirstytis vietosj paskirstytu
 -Pastraipos
 -Ziureti savokas
 -Data ir control flow
 -Esmines isskirstytu sistemu savybes
 -Stiliaus klaidos
--Implementave -> igyvendine
 -Korektiskas pagal sukurtas savybes(safty, liveness)
 -Model Checker, TLAPS
 -Parasyti apie TLA+ irodynejima
@@ -14,6 +10,3 @@
 -Enterpris integration patterns
     -CQRS
     -Publish subscribe
--Korektiskumas -> Adekvatumas
--Uzdaviniu dublikavimas
--Model Checker
