@@ -19,6 +19,353 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{kfk}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{1}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache Kafka}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://kafka.apache.org/
+      \endverb
+      \verb{url}
+      \verb https://kafka.apache.org/
+      \endverb
+    \endentry
+    \entry{kfkGH}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{2}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache Kafka Mirror Tests}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://github.com/confluentinc/kafka/tree/master/tests
+      \endverb
+      \verb{url}
+      \verb https://github.com/confluentinc/kafka/tree/master/tests
+      \endverb
+    \endentry
+    \entry{kfkissue}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{3}
+      \field{labeltitlesource}{title}
+      \field{title}{Kafka - - ASF JIRA}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-10635?filter=allopenissues
+      \endverb
+      \verb{url}
+      \verb https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-10635?filter=allopenissues
+      \endverb
+    \endentry
+    \entry{bucchiarone2018monolithic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=021333597292c01c43892659dddf47de}{%
+           family={Bucchiarone},
+           familyi={B\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=05023247140dc3d76c65df203f9a1ca5}{%
+           family={Dragoni},
+           familyi={D\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=748d3aa7019baff9dd392f0f9e793368}{%
+           family={Dustdar},
+           familyi={D\bibinitperiod},
+           given={Schahram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f32deeac92d18e94fedc60a4d77c6073}{%
+           family={Larsen},
+           familyi={L\bibinitperiod},
+           given={Stephan\bibnamedelima T},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=147f187ab39b8aa10377370e35dd100c}{%
+           family={Mazzara},
+           familyi={M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \strng{fullhash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \strng{bibnamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \strng{authorbibnamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \strng{authornamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \strng{authorfullhash}{537e6b2dadd51aa8d8900042c50b1bb5}
+      \field{labelalpha}{BDD\textsuperscript {+}18}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ieee Software}
+      \field{number}{3}
+      \field{title}{From monolithic to microservices: An experience report from the banking domain}
+      \field{volume}{35}
+      \field{year}{2018}
+      \field{pages}{50\bibrangedash 55}
+      \range{pages}{6}
+    \endentry
+    \entry{kfkTla}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fdd6445796f0969a2794c861f1cdaf0c}{%
+           family={Gustafson},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{fullhash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{bibnamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authorbibnamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authornamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authorfullhash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \field{labelalpha}{Gus04}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://kafka-summit.org/sessions/hardening-kafka-replication/ ; https://github.com/hachikuji/kafka-specification }}
+      \field{note}{Pristatymas konferencijoje}
+      \field{title}{Hardening Kafka Replication}
+      \field{year}{2004}
+    \endentry
+    \entry{holzmann1995improvement}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=9988303f76dfdb0a8fdf32a54e057755}{%
+           family={Holzmann},
+           familyi={H\bibinitperiod},
+           given={Gerard\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e733022c023bf0b871c95a0ecc9d0427}{%
+           family={Peled},
+           familyi={P\bibinitperiod},
+           given={Doron},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \strng{fullhash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \strng{bibnamehash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \strng{authorbibnamehash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \strng{authornamehash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \strng{authorfullhash}{0525878cb0c65fc621b35cdaa8aef83c}
+      \field{labelalpha}{HP95}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Formal Description Techniques VII}
+      \field{title}{An improvement in formal verification}
+      \field{year}{1995}
+      \field{pages}{197\bibrangedash 211}
+      \range{pages}{15}
+    \endentry
+    \entry{lamport2002specifying}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Boston}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{extraname}{1}
+      \field{labelalpha}{Lam02}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Specifying systems}
+      \field{volume}{388}
+      \field{year}{2002}
+    \endentry
+    \entry{10.1145/177492.177726}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{extraname}{2}
+      \field{labelalpha}{Lam94}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The temporal logic of actions (TLA) is a logic for specifying and reasoning about concurrent systems. Systems and their properties are represented in the same logic, so the assertion that a system meets its specification and the assertion that one system implements another are both expressed by logical implication. TLA is very simple; its syntax and complete formal semantics are summarized in about a page. Yet, TLA is not just a logician's toy; it is extremely powerful, both in principle and in practice. This report introduces TLA and describes how it is used to specify and verify concurrent algorithms. The use of TLA to specify and reason about open systems will be described elsewhere.}
+      \field{issn}{0164-0925}
+      \field{journaltitle}{ACM Trans. Program. Lang. Syst.}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{The Temporal Logic of Actions}
+      \field{volume}{16}
+      \field{year}{1994}
+      \field{pages}{872\bibrangedash 923}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.1145/177492.177726
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/177492.177726
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/177492.177726
+      \endverb
+      \keyw{liveness properties,safety properties,concurrent programming}
+    \endentry
+    \entry{newcombe2014use}{article}{}
+      \name{author}{6}{}{%
+        {{hash=bc081aaa9e5e66af1bb3ec9a00d2524d}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9bd8b580a4158aa39151754e65dad02d}{%
+           family={Rath},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=134f920c18434b9e1a1d16bfd98d022e}{%
+           family={Munteanu},
+           familyi={M\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=37ab8016df037eabf3dec67d4d37408d}{%
+           family={Brooker},
+           familyi={B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=804a47d828a49a00ae677995590050ac}{%
+           family={Deardeuff},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \strng{fullhash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \strng{bibnamehash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \strng{authorbibnamehash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \strng{authornamehash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \strng{authorfullhash}{65f12417edfbdf3692d6bc2ce6368d78}
+      \field{labelalpha}{NRZ\textsuperscript {+}14}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{See http://research. microsoft. com/en-us/um/people/lamport/tla/formal-methods-amazon. pdf}
+      \field{title}{Use of formal methods at Amazon Web Services}
+      \field{year}{2014}
+    \endentry
+    \entry{4567924}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=e84ce1b23682e35f78bc43024826a300}{%
+           family={{Pnueli}},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84ce1b23682e35f78bc43024826a300}
+      \strng{fullhash}{e84ce1b23682e35f78bc43024826a300}
+      \strng{bibnamehash}{e84ce1b23682e35f78bc43024826a300}
+      \strng{authorbibnamehash}{e84ce1b23682e35f78bc43024826a300}
+      \strng{authornamehash}{e84ce1b23682e35f78bc43024826a300}
+      \strng{authorfullhash}{e84ce1b23682e35f78bc43024826a300}
+      \field{labelalpha}{Pnu77}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{18th Annual Symposium on Foundations of Computer Science (sfcs 1977)}
+      \field{title}{The temporal logic of programs}
+      \field{year}{1977}
+      \field{pages}{46\bibrangedash 57}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/SFCS.1977.32
+      \endverb
+    \endentry
+    \entry{sullivan2004software}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=15a786151f3eeee6e80d6f6633f358a8}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=03672f987cad52d4a926719e2bc9bd87}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jinlin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=acca6046c85c9921b0304214c9b40710}{%
+           family={Coppit},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cb73d882c62f9d84dc13288d908dfa86}{%
+           family={Khurshid},
+           familyi={K\bibinitperiod},
+           given={Sarfraz},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cb6c47b8514016726e35197230c2f7d6}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \strng{fullhash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \strng{bibnamehash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \strng{authorbibnamehash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \strng{authornamehash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \strng{authorfullhash}{84b386ae6ed010b69ed4a538c34a3d59}
+      \field{labelalpha}{SYC\textsuperscript {+}04}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2004 ACM SIGSOFT international symposium on Software testing and analysis}
+      \field{title}{Software assurance by bounded exhaustive testing}
+      \field{year}{2004}
+      \field{pages}{133\bibrangedash 142}
+      \range{pages}{10}
+    \endentry
     \entry{mcr}{misc}{}
       \name{author}{1}{}{%
         {{hash=9e801bbdef8cad3ea8f2328f50f2284e}{%
@@ -40,8 +387,45 @@
       \field{labeltitlesource}{title}
       \field{title}{New Research Shows 63\% of Enterprises Are Adopting Microservices Architectures}
       \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.globenewswire.com/news-release/2018/09/20/1573625/0/en/New-Research-Shows-63-Percent-of-Enterprises-Are-Adopting-Microservices-Architectures-Yet-50-Percent-Are-Unaware-of-the-Impact-on-Revenue-Generating-Business-Processes.html
+      \endverb
+      \verb{url}
+      \verb https://www.globenewswire.com/news-release/2018/09/20/1573625/0/en/New-Research-Shows-63-Percent-of-Enterprises-Are-Adopting-Microservices-Architectures-Yet-50-Percent-Are-Unaware-of-the-Impact-on-Revenue-Generating-Business-Processes.html
+      \endverb
+    \endentry
+    \entry{819971}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9f30086e7f7947dabbf935ce242231ec}{%
+           family={{Whittaker}},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f30086e7f7947dabbf935ce242231ec}
+      \strng{fullhash}{9f30086e7f7947dabbf935ce242231ec}
+      \strng{bibnamehash}{9f30086e7f7947dabbf935ce242231ec}
+      \strng{authorbibnamehash}{9f30086e7f7947dabbf935ce242231ec}
+      \strng{authornamehash}{9f30086e7f7947dabbf935ce242231ec}
+      \strng{authorfullhash}{9f30086e7f7947dabbf935ce242231ec}
+      \field{labelalpha}{Whi00}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Software}
+      \field{number}{1}
+      \field{title}{What is software testing? And why is it so hard?}
+      \field{volume}{17}
+      \field{year}{2000}
+      \field{pages}{70\bibrangedash 79}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/52.819971
+      \endverb
     \endentry
   \enddatalist
+  \missing{hohpe2004enterprise}
 \endrefsection
 \endinput
 

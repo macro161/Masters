@@ -36,59 +36,59 @@
 	\sectionnonum{Įvadas}
 
 		Šiais laikais kai kurios programų sistemos yra kuriamos išskirstytų sistemų principu\cite{mcr}.
-		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis.
+		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis\cite{bucchiarone2018monolithic}.
 		Vienas iš būdų tai padaryti yra naudotis išskirstytų srautinių duomenų platformomis.
-		Viena iš tokių platformų yra Apache Kafka.
+		Viena iš tokių platformų yra Apache Kafka\cite{kfk}.
 
 
- 		Apache Kafka buvo pradėta kurti kompanijos LinkedIn. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
+ 		Apache Kafka buvo pradėta kurti kompanijos LinkedIn\cite{kfk}. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
 		2012 metais Apache Kafka sistema buvo perduota į Apache Software Foundation tolesniam vystymui.
 		Šiuo metu Apache Kafka platforma yra žinučių siuntimo sistema, kurios dizainas pasižymi lengvu plečiamumu, patvarumu, patikimumu ir greičiu.
 		Duomenys Apache Kafka platformoje yra išsaugomi saugiu, trukdžiams atspariu būdu.
-		Apache Kafka kūrėjų teigimu, šiuo metu platforma naudoja daugiau negu 80 procentų didžiausių Jungtinių Valstijų įmonių.
-		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiuose kaip žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų.
+		Apache Kafka kūrėjų teigimu, šiuo metu platforma naudoja daugiau negu 80 procentų didžiausių Jungtinių Valstijų įmonių\cite{kfk}.
+		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiuose kaip žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų\cite{kfk}.
 
 
-		Norint užtikrinti Apache Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų.
-		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo.
+		Norint užtikrinti Apache Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų\cite{kfkGH}.
+		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo\cite{819971}.
 		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
-		Net ir paskyrus daugiau resursų testavimui, netrivialiuose sistemose, tokiose kaip Apache Kafka, pilnas sistemos testavimas yra neįmanomas.
+		Net ir paskyrus daugiau resursų testavimui, netrivialiuose sistemose, tokiose kaip Apache Kafka, pilnas sistemos testavimas yra neįmanomas\cite{sullivan2004software}.
 		Todėl norint atrasti subtilesnius sisteminius sutrikimus tenka naudoti kitus metodus.
 		Vienas iš tokių metodų yra formalus verifikavimas.
 
 
-		Formalios specifikacijos yra matematinės technikos, skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą, naudojant griežtas ir veiksmingas priemones.
+		Formalios specifikacijos yra matematinės technikos, skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą, naudojant griežtas ir veiksmingas priemone\cite{holzmann1995improvement}.
 		Turint formalią specifikaciją galima ja pasinaudoti formaliai verifikuojant ir parodant, kad sistemos dizainas yra adekvatus pagal sukurtą specifikaciją.
 		Tai leidžia objektyviai koreguoti sistemos dizainą dar prieš pradedant ją įgyvendinti.
 		Formalios specifikacijos sudaromos pasinaudojant tam tikra kalba arba įrankiu.
 		Viena iš tokių formalaus specifikavimo kalbų yra TLA\textsuperscript{+}.
 		
 
-		TLA\textsuperscript{+} yra formalios specifikacijos kalba sukurta Leslie Lamport.
-		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. Temporal Logic of Actions) pasinaudodamas Amir Pnueli 1997 metais sukurta laiko logika(angl. Temporal Logic).
-		1999 metais Leslie Lamport, pasinaudodamas savo sukurta laiko veiksmų logika, sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+}.
+		TLA\textsuperscript{+} yra formalios specifikacijos kalba sukurta Leslie Lamport\cite{lamport2002specifying}.
+		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. Temporal Logic of Actions)\cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika(angl. Temporal Logic) \cite{4567924}.
+		1999 metais Leslie Lamport, pasinaudodamas savo sukurta laiko veiksmų logika, sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+}\cite{lamport2002specifying}.
 		TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų sistemų formalios specifikacijoms ir šias specifikacijas verifikuoti.
 		Kadangi TLA\textsuperscript{+} specifikacija yra parašyta formalia kalba tai leidžia sukurti modelius, kurių elgesį galima patikrinti pažingsniui, stebint ar modelis nepažeidžia apibrėžto nekintamumo.
 		TLA\textsuperscript{+} specifikacijos buvo sėkmingai taikytos ir industrijoje.
 
 
-		Viena iš formalių specifikacijų ir TLA\textsuperscript{+} panaudojimo industrijoje sėkmės istorijų yra Amazon Web Service(AWS) komandos 2014 metais išleistas straipsnis.
+		Viena iš formalių specifikacijų ir TLA\textsuperscript{+} panaudojimo industrijoje sėkmės istorijų yra Amazon Web Service(AWS) komandos 2014 metais išleistas straipsnis\cite{newcombe2014use}.
 		Straipsnyje rašoma,  kad AWS komanda TLA\textsuperscript{+} formalias specifikacijas panaudojo dešimtyje didelių projektų ir AWS tuo metu turėjo 7 komandas, kurios naudojosi TLA\textsuperscript{+} kurdamos naujas programų sistemas.
 		AWS sistemos specifikavimo metu buvo surasti 10 iki šiol neatrastų sisteminių klaidų, kurių atradimas ir pasiūlyti ištaisymai atskleidė tolimesnes sistemines klaidas.
 		Straipsnyje įvardinta ir kita, netiesioginė nauda gauta formaliai specifikuojant sistemą: pagerėjęs bendras sistemos suvokimas, padidėjęs produktyvumas ir inovacijos.
 		
 
-		Dar viena sėkmės istorija yra 2018 metais Kafka Summit konferencijoje pristatyta Apache Kafka TLA\textsuperscript{+} formali specifikacija sukurta Jason Gustafson.
+		Dar viena sėkmės istorija yra 2018 metais Kafka Summit konferencijoje pristatyta Apache Kafka TLA\textsuperscript{+} formali specifikacija sukurta Jason Gustafson\cite{kfkTla}.
 		Pristatyme buvo parodyta, kad pritaikius TLA\textsuperscript{+} specifikuojant Apache Kafka duomenų replikavimo algoritmą buvo surastos ir pataisytos 3 retais atsitinkančios programos klaidos.
 		Keletas programos klaidų buvo surastos ir pataisytos taisant jau minėtas tris pradines klaidas.
 
 	\subsection{Temos aktualumas bei naujumas}
-		Iki šiol, kiek mums žinoma, Apache Kafka platforma buvo specifikuota tik vieną kartą neakademiniame kontekste ir sukurta specifikacija atnešė naudos padėdama surasti sistemines klaidas.
-		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose.
+		Iki šiol, kiek mums žinoma, Apache Kafka platforma buvo specifikuota tik vieną kartą\cite{kfkTla} neakademiniame kontekste ir sukurta specifikacija atnešė naudos padėdama surasti sistemines klaidas.
+		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose\cite{newcombe2014use}.
 		Dėl papildomų Apache Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo išskirstytuose sistemose manome, kad papildomi tyrimai Apache Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
-		Šiuo metu Apache Kafka sisteminių klaidų registre yra išspręstų  ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
-		Apache Kafka platforma turi daug naudotojų, todėl tolimesnis kokybės užtikrinimas Apache Kafka platformoje atneštų naudą.
-		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
+		Šiuo metu Apache Kafka sisteminių klaidų registre\cite{kfkissue} yra išspręstų ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
+		Apache Kafka platforma turi daug naudotojų\cite{kfk}, todėl tolimesnis kokybės užtikrinimas Apache Kafka platformoje atneštų naudą.
+		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus\cite{hohpe2004enterprise} būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
 	
 	\subsection{Darbo tikslas}
 		Pagerinti Apache Kafka platformos kokybę surandant sistemines klaidas arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.
