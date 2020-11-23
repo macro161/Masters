@@ -171,6 +171,36 @@
       \field{pages}{197\bibrangedash 211}
       \range{pages}{15}
     \endentry
+    \entry{hohpe2004enterprise}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2ed2f5feceafdf9a03a27134da39d3d0}{%
+           family={Hohpe},
+           familyi={H\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8ea1767d5a1edce116c79b82a83c54da}{%
+           family={Woolf},
+           familyi={W\bibinitperiod},
+           given={Bobby},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{ddf3be6dfde807c1811cbd3352154f04}
+      \strng{fullhash}{ddf3be6dfde807c1811cbd3352154f04}
+      \strng{bibnamehash}{ddf3be6dfde807c1811cbd3352154f04}
+      \strng{authorbibnamehash}{ddf3be6dfde807c1811cbd3352154f04}
+      \strng{authornamehash}{ddf3be6dfde807c1811cbd3352154f04}
+      \strng{authorfullhash}{ddf3be6dfde807c1811cbd3352154f04}
+      \field{labelalpha}{HW04}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Enterprise integration patterns: Designing, building, and deploying messaging solutions}
+      \field{year}{2004}
+    \endentry
     \entry{lamport2002specifying}{book}{}
       \name{author}{1}{}{%
         {{hash=5d77435450d10a850a5b58577b9a456b}{%
@@ -198,6 +228,32 @@
       \field{volume}{388}
       \field{year}{2002}
     \endentry
+    \entry{lamport2005generalized}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Technical Report MSR-TR-2005-33, Microsoft Research}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{extraname}{2}
+      \field{labelalpha}{Lam05}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Generalized consensus and Paxos}
+      \field{year}{2005}
+    \endentry
     \entry{10.1145/177492.177726}{article}{}
       \name{author}{1}{}{%
         {{hash=5d77435450d10a850a5b58577b9a456b}{%
@@ -218,7 +274,7 @@
       \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
       \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
       \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{labelalpha}{Lam94}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
@@ -425,7 +481,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{hohpe2004enterprise}
 \endrefsection
 \endinput
 

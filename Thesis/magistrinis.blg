@@ -1,16 +1,14 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'magistrinis.blg'
-[81] biber-MSWIN64:330> INFO - === 
-[98] Biber.pm:415> INFO - Reading 'magistrinis.bcf'
-[192] Biber.pm:952> INFO - Found 14 citekeys in bib section 0
-[208] Biber.pm:4334> INFO - Processing section 0
-[221] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
-[254] bibtex.pm:1682> INFO - LaTeX decoding ...
-[298] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografija.bib'
-[350] Utils.pm:395> WARN - I didn't find a database entry for 'hohpe2004enterprise' (section 0)
-[371] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[371] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[371] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'lt-LT'
-[387] bbl.pm:651> INFO - Writing 'magistrinis.bbl' with encoding 'UTF-8'
-[393] bbl.pm:754> INFO - Output to magistrinis.bbl
-[393] Biber.pm:128> INFO - WARNINGS: 1
+[90] biber-MSWIN64:330> INFO - === 
+[109] Biber.pm:415> INFO - Reading 'magistrinis.bcf'
+[212] Biber.pm:952> INFO - Found 15 citekeys in bib section 0
+[228] Biber.pm:4334> INFO - Processing section 0
+[242] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[268] bibtex.pm:1682> INFO - LaTeX decoding ...
+[318] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografija.bib'
+[403] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[403] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[403] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'lt-LT'
+[422] bbl.pm:651> INFO - Writing 'magistrinis.bbl' with encoding 'UTF-8'
+[428] bbl.pm:754> INFO - Output to magistrinis.bbl

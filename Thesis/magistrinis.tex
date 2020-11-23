@@ -104,11 +104,18 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Dėl papildomų Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo išskirstytuose sistemose manome, kad papildomi tyrimai Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
 		Šiuo metu Kafka sisteminių klaidų registre\cite{kfkissue} yra išspręstų ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
 		Kafka platforma turi daug naudotojų\cite{kfk}, todėl tolimesnis kokybės užtikrinimas Kafka platformoje atneštų naudą.
-		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus\cite{hohpe2004enterprise} būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
+
+		
+		Kurti specifikacijas Kafka platformai gali būti naudinga ir didesniai aibei sistemų. 
+		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus\cite{hohpe2004enterprise}, naudojamus Kafka platformoje, būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
+		Šiuo metu yra straipsnių, kuriuose formaliai verifikuojami išskirstytų sistemų algoritmai \cite{lamport2005generalized}, kurie yra naudojami kurti išskirstytas sistemas, todėl tikimasi, kad panašių rezultatų pavyktų pasiekti specifikuojant Kafka platformą.
 	
 	\subsection{Darbo tikslas}
-		Pagerinti Kafka platformos kokybę surandant sistemines klaidas arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.
-		Įrodyti didesnės išskirstytų sistemų aibės algoritmų adekvatumą specifikuojant architektūrinius šablonus.
+		\begin{enumerate}
+			\item{Pagerinti Kafka platformos kokybę surandant sistemines klaidas arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.}
+			\item{Įrodyti didesnės išskirstytų sistemų aibės algoritmų adekvatumą specifikuojant architektūrinius šablonus.}
+		\end{enumerate}	
+
 	
 	\subsection{Uždaviniai}
 		\begin{enumerate}
