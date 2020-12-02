@@ -35,29 +35,29 @@
 
 	\sectionnonum{Įvadas}
 
-		Šiais laikais, kai kurios, programų sistemos yra kuriamos išskirstytų sistemų principu\cite{mcr}.
-		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis\cite{bucchiarone2018monolithic}.
+		Šiais laikais, kai kurios, programų sistemos yra išskirstytų \cite{mcr}.
+		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis \cite{bucchiarone2018monolithic}.
 		Vienas iš būdų tai padaryti yra naudotis išskirstytų srautinių duomenų platformomis.
-		Viena iš tokių platformų yra Apache Kafka(toliau - Kafka)\cite{kfk}.
+		Viena iš tokių platformų yra Apache Kafka (toliau -- Kafka) \cite{kfk}.
 
 
- 		Kafka buvo pradėta kurti kompanijos LinkedIn\cite{kfk}. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
+ 		Kafka buvo pradėta kurti kompanijos LinkedIn \cite{kfk}. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
 		2012 metais Kafka sistema buvo perduota į Apache Software Foundation tolesniam vystymui.
 		Šiuo metu Kafka platforma yra žinučių siuntimo sistema, kurios dizainas pasižymi lengvu plečiamumu, patvarumu, patikimumu ir greičiu.
 		Duomenys Kafka platformoje yra išsaugomi saugiu, trukdžiams atspariu būdu.
-		Kafka kūrėjų teigimu, šiuo metu platforma naudoja daugiau negu 80 procentų didžiausių Jungtinių Valstijų įmonių\cite{kfk}.
-		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiuose kaip žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų\cite{kfk}.
+		Kafka kūrėjų teigimu, šiuo metu platforma naudoja daugiau negu 80 procentų didžiausių Jungtinių Valstijų įmonių \cite{kfk}.
+		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiuose kaip žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų \cite{kfk}.
 
 
-		Norint užtikrinti Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų\cite{kfkGH}.
-		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo\cite{819971}.
+		Norint užtikrinti Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų \cite{kfkGH}.
+		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo \cite{819971}.
 		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
-		Net ir paskyrus daugiau resursų testavimui, netrivialiuose sistemose, tokiose kaip Kafka, pilnas sistemos testavimas yra neįmanomas\cite{sullivan2004software}.
+		Net ir paskyrus daugiau resursų testavimui, netrivialiuose sistemose, tokiose kaip Kafka, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
 		Todėl norint atrasti subtilesnius sisteminius sutrikimus tenka naudoti kitus metodus.
 		Vienas iš tokių metodų yra formalus verifikavimas.
 
 
-		Formalios specifikacijos yra matematinės technikos, skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą, naudojant griežtas ir veiksmingas priemone\cite{holzmann1995improvement}.
+		Formalios specifikacijos yra matematinės technikos, skirtos apibūdinti sistemų elgseną ir padėti kuriant jos dizainą, naudojant griežtas ir veiksmingas priemone \cite{holzmann1995improvement}.
 		Turint sistemos formalią specifikaciją galima ja pasinaudoti vykdant formalų verifikavimą ir parodant, kad sistemos dizainas yra adekvatus pagal sukurtą specifikaciją.
 		Sudarinėti formalią sistemos specifikaciją galima ir nepradėjus įgyvendinti sistemos, turint tik jos dizainą. 
 		Formaliai verifikuota specifikacija suteikia informacijos apie dizaino neadekvatumą ir įgalina objektyviai koreguoti sistemos dizainą dar prieš pradedant jį įgyvendinti.
@@ -65,9 +65,9 @@
 		Viena iš tokių, formalaus specifikavimo kalbų, yra TLA\textsuperscript{+}.
 		
 
-		TLA\textsuperscript{+} yra formalios specifikacijos kalba sukurta Leslie Lamport\cite{lamport2002specifying}.
-		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. Temporal Logic of Actions)\cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika(angl. Temporal Logic) \cite{4567924}.
-		1999 metais Leslie Lamport, naudodamasis laiko veiksmų logika, sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+}\cite{lamport2002specifying}.
+		TLA\textsuperscript{+} yra formalios specifikacijos kalba sukurta Leslie Lamport \cite{lamport2002specifying}.
+		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. Temporal Logic of Actions) \cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika (angl. Temporal Logic) \cite{4567924}.
+		1999 metais Leslie Lamport, naudodamasis laiko veiksmų logika, sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+} \cite{lamport2002specifying}.
 		
 
 TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų sistemų formalias specifikacijas ir šias specifikacijas verifikuoti.
@@ -79,7 +79,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Kadangi TLA\textsuperscript{+} specifikacijos yra rašomos formalia kalba tai leidžia patikrinti sukurtos specifikacijos saugumo ir gyvumo savybes.
 		
 
-	Šias savybes mes galime patikrinti naudodamiesi TLC Model Checker(modelio tikrintojas).
+	Šias savybes mes galime patikrinti naudodamiesi TLC Model Checker (modelio tikrintojas).
 		TLC yra nurodytos būsenos(explicit-state) modelio tikrintojas, kurio paskirtis yra pažingsniui pasiekti visas galimas sistemos būsenas pagal nurodytą formalią specifikaciją.
 		Tačiau, kartais, pagal sukurtą formalią specifikaciją, susidaro labai daug būsenų, kurias sistema gali pasiekti, todėl tampa nepraktiška naudoti TLC.
 		Tokiu atveju galime naudotis TLA\textsuperscript{+} specifikacijos įrodymo sistema TLAPS.
@@ -88,26 +88,26 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Įrodžius teoremą laikoma, kad TLA\textsuperscript{+} specifikacija yra adekvati.
 
 
-		Viena iš formalių specifikacijų ir TLA\textsuperscript{+} panaudojimo industrijoje sėkmės istorijų, yra Amazon Web Service(AWS) komandos 2014 metais išleistas straipsnis\cite{newcombe2014use}.
+		Viena iš formalių specifikacijų ir TLA\textsuperscript{+} panaudojimo industrijoje sėkmės istorijų, yra Amazon Web Service(AWS) komandos 2014 metais išleistas straipsnis \cite{newcombe2014use}.
 		Straipsnyje rašoma,  kad AWS komanda naudojo TLA\textsuperscript{+} sudarant formalias specifikacijas dešimtyje projektų. Tuo metu AWS turėjo 7 komandas, kurios naudojosi TLA\textsuperscript{+} kurdamos naujas programų sistemas.
 		AWS sistemos specifikavimo metu buvo surasti 10 iki šiol neatrastų sisteminių klaidų, kurių atradimas ir pasiūlyti ištaisymai atskleidė tolimesnes sistemines klaidas, kurios taip pat buvo ištaisytos.
 		Straipsnyje įvardinta ir kita, netiesioginė, nauda gauta formaliai specifikuojant sistemas: pagerėjęs bendras sistemos suvokimas, padidėjęs produktyvumas ir inovacijos.
 		
 
-		Dar viena sėkmės istorija yra 2018 metais Kafka Summit konferencijoje pristatyta Kafka TLA\textsuperscript{+} formali specifikacija sukurta Jason Gustafson\cite{kfkTla}.
+		Dar viena sėkmės istorija yra 2018 metais Kafka Summit konferencijoje pristatyta Kafka TLA\textsuperscript{+} formali specifikacija sukurta Jason Gustafson \cite{kfkTla}.
 		Pristatyme buvo parodyta, kad pritaikius TLA\textsuperscript{+} specifikuojant Kafka duomenų replikavimo algoritmą buvo surastos ir pataisytos 3 retais atsitinkančios programos klaidos.
 		Betaisant rastos ir pataisytos dar kelios klaidos.
 
 	\subsection{Temos aktualumas bei naujumas}
-		Iki šiol, kiek mums žinoma, Kafka platforma buvo specifikuota tik vieną kartą\cite{kfkTla} neakademiniame kontekste ir sukurta specifikacija atnešė naudos padedant surasti sistemines klaidas.
-		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose\cite{newcombe2014use}.
+		Iki šiol, kiek mums žinoma, Kafka platforma buvo specifikuota tik vieną kartą \cite{kfkTla} neakademiniame kontekste ir sukurta specifikacija atnešė naudos padedant surasti sistemines klaidas.
+		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose \cite{newcombe2014use}.
 		Dėl papildomų Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo išskirstytuose sistemose manome, kad papildomi tyrimai Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
-		Šiuo metu Kafka sisteminių klaidų registre\cite{kfkissue} yra išspręstų ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
-		Kafka platforma turi daug naudotojų\cite{kfk}, todėl tolimesnis kokybės užtikrinimas Kafka platformoje atneštų naudą.
+		Šiuo metu Kafka sisteminių klaidų registre \cite{kfkissue} yra išspręstų ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
+		Kafka platforma turi daug naudotojų \cite{kfk}, todėl tolimesnis kokybės užtikrinimas Kafka platformoje atneštų naudą.
 
 		
 		Kurti specifikacijas Kafka platformai gali būti naudinga ir didesniai aibei sistemų. 
-		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus\cite{hohpe2004enterprise}, naudojamus Kafka platformoje, būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
+		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus \cite{hohpe2004enterprise}, naudojamus Kafka platformoje, būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
 		Šiuo metu yra straipsnių, kuriuose formaliai verifikuojami išskirstytų sistemų algoritmai \cite{lamport2005generalized}, kurie yra naudojami kurti išskirstytas sistemas, todėl tikimasi, kad panašių rezultatų pavyktų pasiekti specifikuojant Kafka platformą.
 	
 	\subsection{Darbo tikslas}

@@ -1,0 +1,29 @@
+Tarpai pries ir po skliaustu ir citatu
+
+Pasiskinti issirstytu sistemu savybes
+
+Bruksneliai(dvigubi)
+
+Linksniai
+
+Adekvatus - atitinkantis realybe
+
+Pateikti savybes su pavyzdziais 
+
+Pirma syki pasaudojus savoka prideti citata
+
+Angliskas tekstas eina pasvyrai
+
+Queing systems
+
+Darbo tikslas - parodyti algoritmu korektiskuma, ivardinti problemas
+
+Sistemines -> sistemos
+
+Algoritmai ne sistemos ir ne dalys
+
+Raft sakybe - triviality, consistency, liveliness
+
+Sutvarkyti citatas...
+
+Mazai saltiniu

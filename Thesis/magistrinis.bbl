@@ -64,6 +64,21 @@
       \verb https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-10635?filter=allopenissues
       \endverb
     \endentry
+    \entry{ltx}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{4}
+      \field{labeltitlesource}{title}
+      \field{title}{Latex is cool}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://kafka.apache.org/
+      \endverb
+      \verb{url}
+      \verb https://kafka.apache.org/
+      \endverb
+    \endentry
     \entry{bucchiarone2018monolithic}{article}{}
       \name{author}{5}{}{%
         {{hash=021333597292c01c43892659dddf47de}{%
