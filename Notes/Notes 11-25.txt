@@ -1,8 +1,4 @@
-Tarpai pries ir po skliaustu ir citatu
-
 Pasiskinti issirstytu sistemu savybes
-
-Bruksneliai(dvigubi)
 
 Linksniai
 
@@ -17,8 +13,6 @@ Angliskas tekstas eina pasvyrai
 Queing systems
 
 Darbo tikslas - parodyti algoritmu korektiskuma, ivardinti problemas
-
-Sistemines -> sistemos
 
 Algoritmai ne sistemos ir ne dalys
 
