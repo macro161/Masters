@@ -23,7 +23,7 @@
 \author{Matas Savickis}
 
 \supervisor{Karolis Petrauskas, Doc., Dr.}
-\reviewer{}
+\reviewer{Vytautas Valaitis}
 \date{Vilnius – \the\year}
 
 \bibliography{bibliografija}
@@ -35,13 +35,21 @@
 
 	\sectionnonum{Įvadas}
 
-		Šiais laikais, kai kurios, programų sistemos yra išskirstytos \cite{mcr}.
-		Šioms sistemoms plečiantis ir didėjant atsiranda problema, kaip efektyviai ir patikimai apdoroti gaunamus duomenis \cite{bucchiarone2018monolithic}.
-		Vienas iš būdų tai padaryti yra naudotis išskirstytų srautinių duomenų platformomis.
-		Viena iš tokių platformų yra Apache Kafka (toliau -- Kafka) \cite{kfk}.
+		Šiais laikais, kai kurios, programų sistemos yra išskirstytos \cite{mcr}. 
+		Išsirstytos sistemos, kaip pavadinimas sufleruoja, yra kuriamos išsirstant skaičiavimo mazgus į atskiras, savarankiškas dalis.
+		Ne taip kaip monolitinės sistemos, išsirstytos sistemos gali veikti skirtinguose serverinėse, kurios gali būti kitose geografinėje lokacijoje.
+		Toks sistemos išskirtsytmas pasižymi šiomis savybėmis.
+		\begin{enumerate}
+			\item{Pasiekiamumas(angl. {\it Availability}) -- sistemos gebėjimas būti pasiekiamai vartotojui visados.}
+			\item{Patvarumas(angl. {\it Durability}) -- išskirstytos sistemos užtikrina duomenų išlaikymą ir pastojų veikimą, net jeigu ir vienas iš paskirstytos sistemos mazgų nustotų veikti dėl sistemos sutrikimų sukeltų programos klaidų arba gamtos katastrofų, gaisrų, potryvių ir panašių nelaimių.}
+			\item{Prečiamumas(angl. {\it Scalability}) -- didėjant vartotojų skaičiui, bet programų sistemos kompleksiškumui išskirstytos sistemos užtikriną vertikalų (Padidinti mazgo techninės įrangos galingumą) bei horizontalų (Padidinti mazgų skaičių sistemoje) plečiamumą.}
+			\item{Našumas(angl. {\it Efficiency}) -- sistemos vartotojų skaičius dažniausiai būna nepastovus, jis kinta dienos metu arba atitinkamais periodais metuose. Išskirstytos sistemos padeda užtikrinti našų įrangos resursų naudojimą sumažinant įrangos galingumą kai vartotojų skaičius yra nedidelis, bei padidinant galingumą kai sistema naudojasi daugiau vartotojų.}
+		\end{enumerate}
+		Šiuo metu yra sukurta keletą atviro kodos išskirstytų sistemų padedančiu apdoroti realaus laiko duomenis.	
+		Viena iš tokių išskirstytų sistemų yra Apache Kafka (toliau -- Kafka) \cite{kfk}.
 
 
- 		Kafka buvo pradėta kurti kompanijos LinkedIn \cite{kfk}. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta internetinių duomenų integravimo užduotims atlikti.
+ 		Kafka buvo pradėta kurti kompanijos LinkedIn \cite{kfk}. Programos tikslas buvo centralizuota įvykių valdymo platformą, skirta interneto duomenų integravimo užduotims atlikti.
 		2012 metais Kafka sistema buvo perduota į Apache Software Foundation tolesniam vystymui.
 		Šiuo metu Kafka platforma yra žinučių siuntimo sistema, kurios dizainas pasižymi lengvu plečiamumu, patvarumu, patikimumu ir greičiu.
 		Duomenys Kafka platformoje yra išsaugomi saugiu, trukdžiams atspariu būdu.
@@ -66,14 +74,14 @@
 		
 
 		TLA\textsuperscript{+} yra formalios specifikacijos kalba sukurta Leslie Lamport \cite{lamport2002specifying}.
-		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. Temporal Logic of Actions) \cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika (angl. Temporal Logic) \cite{4567924}.
+		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką(angl. {\it Temporal Logic of Actions}) \cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika (angl. {\it Temporal Logic}) \cite{4567924}.
 		1999 metais Leslie Lamport, naudodamasis laiko veiksmų logika, sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+} \cite{lamport2002specifying}.
 		
 
 TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų sistemų formalias specifikacijas ir šias specifikacijas verifikuoti.
 		Naudojant TLA\textsuperscript{+} galima specifikuoti šias išskirstytų sistemų savybes \cite{1702415} :
 		\begin{enumerate}
-			\item{Gyvumas -- geri dalykai atsitinka programos vykdymo metu.}
+			\item{Gyvumas -- geri dalykai galiausiai atsitinka programos vykdymo metu. }
 			\item{Saugumas -- blogi dalykai neatsitiks programos vykdymo metu.}
 		\end{enumerate}
 		Kadangi TLA\textsuperscript{+} specifikacijos yra rašomos formalia kalba tai leidžia patikrinti sukurtos specifikacijos saugumo ir gyvumo savybes.
@@ -98,38 +106,37 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Pristatyme buvo parodyta, kad pritaikius TLA\textsuperscript{+} specifikuojant Kafka duomenų replikavimo algoritmą buvo surastos ir pataisytos 3 retais atsitinkančios programos klaidos.
 		Betaisant rastos ir pataisytos dar kelios klaidos.
 
-	\subsection{Temos aktualumas bei naujumas}
+	\subsection*{Temos aktualumas bei naujumas}
 		Iki šiol, kiek mums žinoma, Kafka platforma buvo specifikuota tik vieną kartą \cite{kfkTla} neakademiniame kontekste ir sukurta specifikacija atnešė naudos padedant surasti sistemos klaidas.
 		Panašią mokslininkų sėkmę matome ir Amazon Web Service formalios specifikacijos sudarymo tyrimuose \cite{newcombe2014use}.
-		Dėl papildomų Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo išskirstytuose sistemose manome, kad papildomi tyrimai Kafka platformoje atneštu naudos surandant sisteminių klaidų arba užtikrinant, kad specifikuotoje sistemos dalyje jų nėra.
+		Dėl papildomų Kafka formalių specifikacijų stokos ir praeityje pasisekusio formalaus specifikavimo išskirstytuose sistemose manome, kad papildomi tyrimai Kafka platformoje atneštu naudos surandant algoritmų klaidas arba užtikrinant, kad specifikuotojes algortmuose jų nėra.
 		Šiuo metu Kafka sisteminių klaidų registre \cite{kfkissue} yra išspręstų ir neišspręstų  klaidų kurių verifikavimas padėtų atskleisti naujas klaidas arba įrodyti kad klaidos ištaisytos adekvačiai.
 		Kafka platforma turi daug naudotojų \cite{kfk}, todėl tolimesnis kokybės užtikrinimas Kafka platformoje atneštų naudą.
 
 		
-		Kurti specifikacijas Kafka platformai gali būti naudinga ir didesniai aibei sistemų. 
-		Sėkmingai identifikavus išskirstytų sistemų architektūrinius šablonus \cite{hohpe2004enterprise}, naudojamus Kafka platformoje, būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei ir šio darbo rezultatais būtų galima vadovautis kuriant atitinkamas išskirstytas sistemas. 
-		Šiuo metu yra straipsnių, kuriuose formaliai verifikuojami išskirstytų sistemų algoritmai \cite{lamport2005generalized}, kurie yra naudojami kurti išskirstytas sistemas, todėl tikimasi, kad panašių rezultatų pavyktų pasiekti specifikuojant Kafka platformą.
+		Kurti specifikacijas Kafka platformose naudojamiems algoritmams gali būti naudinga ir didesniai aibei sistemų. 
+		Sėkmingai specifikavus algoritmus, naudojamus Kafka platformoje, būtų galima įrodyti adekvatumą daug didesnei išskirstytų sistemų aibei, kuriuose yra naudojami tokie pat algoritmai. 
+		Šiuo metu yra straipsnių, kuriuose formaliai verifikuojami išskirstytų sistemų algoritmai \cite{lamport2005generalized}, kurie yra naudojami kurti išskirstytas sistemas, todėl tikimasi, kad panašių rezultatų pavyktų pasiekti specifikuojant Kafka platformos algoritmus.
 	
-	\subsection{Darbo tikslas}
+	\subsection*{Darbo tikslas}
 		\begin{enumerate}
-			\item{Pagerinti Kafka platformos kokybę surandant sistemos klaidas arba įrodant, kad sukurtoje specifikacijoje klaidų nėra.}
-			\item{Įrodyti didesnės išskirstytų sistemų aibės algoritmų adekvatumą specifikuojant architektūrinius šablonus.}
+			\item{Parodyti Apache Kafka duomenų replikavimo algoritmų korektiškumą.}
+			\item{Įvardinti Apache Kafka problemas susijusias su duomenų replikavimo algoritmais.}
 		\end{enumerate}	
 
 	
-	\subsection{Uždaviniai}
+	\subsection*{Uždaviniai}
 		\begin{enumerate}
 			\item{Išnagrinėti literatūrą susijusią su formaliais metodais, TLA\textsuperscript{+} specifikavimo kalba bei Kafka platformą.}
-			\item{Specifikuoti išskirtas Kafka platformos dalis naudojant TLA\textsuperscript{+} specifikavimo kalbą.}
-			\item{Įvertinti, ar pagal sukurtą specifikaciją Kafka platforma veikia adekvačiai.}
+			\item{Formaliai specifikuoti pasirinktus Kafka platformos algoritmus naudojant TLA\textsuperscript{+} specifikavimo kalbą.}
+			\item{Verifikuoti, ar pagal sukurtą specifikaciją Kafka platforma veikia korektiškai.}
 			\item{Esant poreikiui įrodyti specifikacijos teoremas.}
-			\item{Patikrinti ar Kafka įgyvendinimas atitinka specifikaciją verifikacijai naudojant įvykių žurnalus.}
-			\item{Kafka platformoje surasti architektūrinius šablonus, kurie yra taikoki ir kituose išskirstytuose sistemose, bei juos specifikuoti.}
+			\item{Surasti kitas paskirstytas sistemas, kuriuose yra naudojami šiame darbe formaliai specifikuoti algoritmai.}
 		\end{enumerate}
 	
-	\subsection{Laukiami rezultatai}
+	\subsection*{Laukiami rezultatai}
 		\begin{enumerate}
-			\item{Pasirinktų Kafka modulių specifikacija.}
+			\item{Pasirinktų Kafka algoritmų specifikacija.}
 			\item{Įrodymas apie specifikacijos adekvatumą.}
 			\item{Kafka
  specifikacijos ir įgyvendinimo sutapimo įvertinimas.}
