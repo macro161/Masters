@@ -235,13 +235,13 @@
 
 
 % Sekcija pradeda naują puslapį
-\renewcommand{\section}{%
-    \cleardoublepage%
-    \@startsection {section}{1}{\z@}%
-        {-3.5ex \@plus -1ex \@minus -.2ex}%
-        {2.3ex \@plus.2ex}%
-        {\normalfont\Large\bfseries}%
-}
+%\renewcommand{\section}{%
+%    \cleardoublepage%
+%    \@startsection {section}{1}{\z@}%
+%        {-3.5ex \@plus -1ex \@minus -.2ex}%
+%        {2.3ex \@plus.2ex}%
+%        {\normalfont\Large\bfseries}%
+%}
 
 % Priedo sekcijų formatavimas turiniui
 \renewcommand{\appendix}{%

@@ -79,56 +79,6 @@
       \verb https://kafka.apache.org/
       \endverb
     \endentry
-    \entry{bucchiarone2018monolithic}{article}{}
-      \name{author}{5}{}{%
-        {{hash=021333597292c01c43892659dddf47de}{%
-           family={Bucchiarone},
-           familyi={B\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-        {{hash=05023247140dc3d76c65df203f9a1ca5}{%
-           family={Dragoni},
-           familyi={D\bibinitperiod},
-           given={Nicola},
-           giveni={N\bibinitperiod}}}%
-        {{hash=748d3aa7019baff9dd392f0f9e793368}{%
-           family={Dustdar},
-           familyi={D\bibinitperiod},
-           given={Schahram},
-           giveni={S\bibinitperiod}}}%
-        {{hash=f32deeac92d18e94fedc60a4d77c6073}{%
-           family={Larsen},
-           familyi={L\bibinitperiod},
-           given={Stephan\bibnamedelima T},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=147f187ab39b8aa10377370e35dd100c}{%
-           family={Mazzara},
-           familyi={M\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \strng{fullhash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \strng{bibnamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \strng{authorbibnamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \strng{authornamehash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \strng{authorfullhash}{537e6b2dadd51aa8d8900042c50b1bb5}
-      \field{labelalpha}{BDD\textsuperscript {+}18}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Ieee Software}
-      \field{number}{3}
-      \field{title}{From monolithic to microservices: An experience report from the banking domain}
-      \field{volume}{35}
-      \field{year}{2018}
-      \field{pages}{50\bibrangedash 55}
-      \range{pages}{6}
-    \endentry
     \entry{kfkTla}{misc}{}
       \name{author}{1}{}{%
         {{hash=fdd6445796f0969a2794c861f1cdaf0c}{%
@@ -185,36 +135,6 @@
       \field{year}{1995}
       \field{pages}{197\bibrangedash 211}
       \range{pages}{15}
-    \endentry
-    \entry{hohpe2004enterprise}{book}{}
-      \name{author}{2}{}{%
-        {{hash=2ed2f5feceafdf9a03a27134da39d3d0}{%
-           family={Hohpe},
-           familyi={H\bibinitperiod},
-           given={Gregor},
-           giveni={G\bibinitperiod}}}%
-        {{hash=8ea1767d5a1edce116c79b82a83c54da}{%
-           family={Woolf},
-           familyi={W\bibinitperiod},
-           given={Bobby},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley Professional}%
-      }
-      \strng{namehash}{ddf3be6dfde807c1811cbd3352154f04}
-      \strng{fullhash}{ddf3be6dfde807c1811cbd3352154f04}
-      \strng{bibnamehash}{ddf3be6dfde807c1811cbd3352154f04}
-      \strng{authorbibnamehash}{ddf3be6dfde807c1811cbd3352154f04}
-      \strng{authornamehash}{ddf3be6dfde807c1811cbd3352154f04}
-      \strng{authorfullhash}{ddf3be6dfde807c1811cbd3352154f04}
-      \field{labelalpha}{HW04}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Enterprise integration patterns: Designing, building, and deploying messaging solutions}
-      \field{year}{2004}
     \endentry
     \entry{lamport2002specifying}{book}{}
       \name{author}{1}{}{%
@@ -496,6 +416,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{1702415}
 \endrefsection
 \endinput
 

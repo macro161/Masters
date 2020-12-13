@@ -1,14 +1,16 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'magistrinis.blg'
-[88] biber-MSWIN64:330> INFO - === 
-[108] Biber.pm:415> INFO - Reading 'magistrinis.bcf'
-[214] Biber.pm:952> INFO - Found 16 citekeys in bib section 0
-[231] Biber.pm:4334> INFO - Processing section 0
-[245] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
-[771] bibtex.pm:1682> INFO - LaTeX decoding ...
-[1160] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografija.bib'
-[1248] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1248] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1248] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'lt-LT'
-[1268] bbl.pm:651> INFO - Writing 'magistrinis.bbl' with encoding 'UTF-8'
-[1274] bbl.pm:754> INFO - Output to magistrinis.bbl
+[83] biber-MSWIN64:330> INFO - === 
+[100] Biber.pm:415> INFO - Reading 'magistrinis.bcf'
+[196] Biber.pm:952> INFO - Found 15 citekeys in bib section 0
+[214] Biber.pm:4334> INFO - Processing section 0
+[227] Biber.pm:4523> INFO - Looking for bibtex format file 'bibliografija.bib' for section 0
+[248] bibtex.pm:1682> INFO - LaTeX decoding ...
+[314] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografija.bib'
+[363] Utils.pm:395> WARN - I didn't find a database entry for '1702415' (section 0)
+[385] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[385] UCollate.pm:68> INFO - Overriding locale 'lt-LT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[385] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'lt-LT'
+[401] bbl.pm:651> INFO - Writing 'magistrinis.bbl' with encoding 'UTF-8'
+[406] bbl.pm:754> INFO - Output to magistrinis.bbl
+[407] Biber.pm:128> INFO - WARNINGS: 1
