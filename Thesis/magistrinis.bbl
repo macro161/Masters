@@ -19,11 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{kfk}{misc}{}
+    \entry{rafttla}{misc}{}
+      \field{labelalpha}{18}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{Raft formal specification with TLA+}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/ongardie/raft.tla/blob/master/raft.tla
+      \endverb
+      \verb{url}
+      \verb https://github.com/ongardie/raft.tla/blob/master/raft.tla
+      \endverb
+    \endentry
+    \entry{raftimpl}{misc}{}
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extraalpha}{1}
+      \field{labeltitlesource}{title}
+      \field{title}{A Raft Protocol for the Metadata Quorum}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cwiki.apache.org/confluence/display/KAFKA/KIP-595\%3A+A+Raft+Protocol+for+the+Metadata+Quorum
+      \endverb
+      \verb{url}
+      \verb https://cwiki.apache.org/confluence/display/KAFKA/KIP-595%5C%3A+A+Raft+Protocol+for+the+Metadata+Quorum
+      \endverb
+    \endentry
+    \entry{kfk}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{2}
       \field{labeltitlesource}{title}
       \field{title}{Apache Kafka}
       \field{year}{2020}
@@ -38,7 +67,7 @@
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{2}
+      \field{extraalpha}{3}
       \field{labeltitlesource}{title}
       \field{title}{Apache Kafka Mirror Tests}
       \field{year}{2020}
@@ -53,7 +82,7 @@
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{3}
+      \field{extraalpha}{4}
       \field{labeltitlesource}{title}
       \field{title}{Kafka - - ASF JIRA}
       \field{year}{2020}
@@ -68,7 +97,7 @@
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{4}
+      \field{extraalpha}{5}
       \field{labeltitlesource}{title}
       \field{title}{Latex is cool}
       \field{year}{2020}
@@ -77,6 +106,148 @@
       \endverb
       \verb{url}
       \verb https://kafka.apache.org/
+      \endverb
+    \endentry
+    \entry{coulouris2005distributed}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0e1fba7a47e533aa9c3fdeda01f7eb42}{%
+           family={Coulouris},
+           familyi={C\bibinitperiod},
+           given={George\bibnamedelima F},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b8575e961dd1a27c0844cbf89179dd13}{%
+           family={Dollimore},
+           familyi={D\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f331f31acb4f7411c14a757aeb826e85}{%
+           family={Kindberg},
+           familyi={K\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {pearson education}%
+      }
+      \strng{namehash}{b70c45244c26e2252ba6127055a9dc07}
+      \strng{fullhash}{b70c45244c26e2252ba6127055a9dc07}
+      \strng{bibnamehash}{b70c45244c26e2252ba6127055a9dc07}
+      \strng{authorbibnamehash}{b70c45244c26e2252ba6127055a9dc07}
+      \strng{authornamehash}{b70c45244c26e2252ba6127055a9dc07}
+      \strng{authorfullhash}{b70c45244c26e2252ba6127055a9dc07}
+      \field{labelalpha}{CDK05}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Distributed systems: concepts and design}
+      \field{year}{2005}
+    \endentry
+    \entry{cousineau2012tla+}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=62f1531a2487dce70ddb65e81763135b}{%
+           family={Cousineau},
+           familyi={C\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6b48ad934581cc5e920d9e9281226a11}{%
+           family={Doligez},
+           familyi={D\bibinitperiod},
+           given={Damien},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cc8dc4c4a7e728cf34df66eb741fed7e}{%
+           family={Merz},
+           familyi={M\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=94da9773187222ad5ae6ec7aba45a5fe}{%
+           family={Ricketts},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b8acbae6ff3514b2256fade33e9c8782}{%
+           family={Vanzetto},
+           familyi={V\bibinitperiod},
+           given={Hernán},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8aa896aa461b072118e7a0da759ba42a}
+      \strng{fullhash}{8aa896aa461b072118e7a0da759ba42a}
+      \strng{bibnamehash}{8aa896aa461b072118e7a0da759ba42a}
+      \strng{authorbibnamehash}{8aa896aa461b072118e7a0da759ba42a}
+      \strng{authornamehash}{8aa896aa461b072118e7a0da759ba42a}
+      \strng{authorfullhash}{8aa896aa461b072118e7a0da759ba42a}
+      \field{labelalpha}{CDL\textsuperscript {+}12}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Symposium on Formal Methods}
+      \field{title}{TLA+ proofs}
+      \field{year}{2012}
+      \field{pages}{147\bibrangedash 154}
+      \range{pages}{8}
+    \endentry
+    \entry{180327}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=18f45967b2216582a8ebae1a5f7ea632}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Trinabh},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a6789132c8d17ad9db542f6d0816babd}{%
+           family={Leners},
+           familyi={L\bibinitperiod},
+           given={Joshua\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=af84f3d0e9004edbf572a9e1fbd7d12b}{%
+           family={Aguilera},
+           familyi={A\bibinitperiod},
+           given={Marcos\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=0fd5d20a895d7a0746181711d917cf6d}{%
+           family={Walfish},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lombard, IL}%
+      }
+      \list{publisher}{1}{%
+        {{USENIX} Association}%
+      }
+      \strng{namehash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \strng{fullhash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \strng{bibnamehash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \strng{authorbibnamehash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \strng{authornamehash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \strng{authorfullhash}{2c03a31753ea2d3ab136c5005e30ac18}
+      \field{labelalpha}{GLA\textsuperscript {+}13}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{10th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 13)}
+      \field{isbn}{978-1-931971-00-3}
+      \field{month}{4}
+      \field{title}{Improving Availability in Distributed Systems with Failure Informers}
+      \field{year}{2013}
+      \field{pages}{427\bibrangedash 441}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/leners
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/leners
       \endverb
     \endentry
     \entry{kfkTla}{misc}{}
@@ -98,7 +269,7 @@
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://kafka-summit.org/sessions/hardening-kafka-replication/ ; https://github.com/hachikuji/kafka-specification }}
+      \field{howpublished}{\url{https://kafka-summit.org/sessions/hardening-kafka-replication}}
       \field{note}{Pristatymas konferencijoje}
       \field{title}{Hardening Kafka Replication}
       \field{year}{2004}
@@ -135,6 +306,139 @@
       \field{year}{1995}
       \field{pages}{197\bibrangedash 211}
       \range{pages}{15}
+    \endentry
+    \entry{10.1145/2723872.2723876}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ab451ce5642ffe31693f5d0a199bee34}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=090eda7bf97076b0df739ac29207efe5}{%
+           family={Schwarzkopf},
+           familyi={S\bibinitperiod},
+           given={Malte},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a17d161e41f9dbfd5c8cd4c63a4df246}{%
+           family={Madhavapeddy},
+           familyi={M\bibinitperiod},
+           given={Anil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c277a690b3be7e183b85a00be4828510}{%
+           family={Crowcroft},
+           familyi={C\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \strng{fullhash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \strng{bibnamehash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \strng{authorbibnamehash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \strng{authornamehash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \strng{authorfullhash}{4b89c258bf1c269a3a68da2f34a0d19d}
+      \field{labelalpha}{HSM\textsuperscript {+}15}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Paxos algorithm is famously difficult to reason about and even more so to implement, despite having been synonymous with distributed consensus for over a decade. The recently proposed Raft protocol lays claim to being a new, understandable consensus algorithm, improving on Paxos without making compromises in performance or correctness.In this study, we repeat the Raft authors' performance analysis. We developed a clean-slate implementation of the Raft protocol and built an event-driven simulation framework for prototyping it on experimental topologies. We propose several optimizations to the Raft protocol and demonstrate their effectiveness under contention. Finally, we empirically validate the correctness of the Raft protocol invariants and evaluate Raft's understandability claims.}
+      \field{issn}{0163-5980}
+      \field{journaltitle}{SIGOPS Oper. Syst. Rev.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Raft Refloated: Do We Have Consensus?}
+      \field{volume}{49}
+      \field{year}{2015}
+      \field{pages}{12\bibrangedash 21}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2723872.2723876
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2723872.2723876
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2723872.2723876
+      \endverb
+    \endentry
+    \entry{yu1999model}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b8e2e9f67019f464cefe5db1c822ffd9}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c1dda04d1db6a910d9c8994eb9756348}{%
+           family={Manolios},
+           familyi={M\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{46a57f5c943bbccd1a235a597c3f1118}
+      \strng{fullhash}{46a57f5c943bbccd1a235a597c3f1118}
+      \strng{bibnamehash}{46a57f5c943bbccd1a235a597c3f1118}
+      \strng{authorbibnamehash}{46a57f5c943bbccd1a235a597c3f1118}
+      \strng{authornamehash}{46a57f5c943bbccd1a235a597c3f1118}
+      \strng{authorfullhash}{46a57f5c943bbccd1a235a597c3f1118}
+      \field{labelalpha}{YML99}
+      \field{sortinit}{Y}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advanced Research Working Conference on Correct Hardware Design and Verification Methods}
+      \field{title}{Model checking TLA+ specifications}
+      \field{year}{1999}
+      \field{pages}{54\bibrangedash 66}
+      \range{pages}{13}
+    \endentry
+    \entry{862209}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fc0827a6465de093b631cab316e9c6ce}{%
+           family={{Jogalekar}},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=93e6d5d54d26091f80beba2d0ebb1d80}{%
+           family={{Woodside}},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c774798acc988be21b57ed31b8eb6d6}
+      \strng{fullhash}{6c774798acc988be21b57ed31b8eb6d6}
+      \strng{bibnamehash}{6c774798acc988be21b57ed31b8eb6d6}
+      \strng{authorbibnamehash}{6c774798acc988be21b57ed31b8eb6d6}
+      \strng{authornamehash}{6c774798acc988be21b57ed31b8eb6d6}
+      \strng{authorfullhash}{6c774798acc988be21b57ed31b8eb6d6}
+      \field{labelalpha}{JW00}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Parallel and Distributed Systems}
+      \field{number}{6}
+      \field{title}{Evaluating the scalability of distributed systems}
+      \field{volume}{11}
+      \field{year}{2000}
+      \field{pages}{589\bibrangedash 603}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/71.862209
+      \endverb
     \endentry
     \entry{lamport2002specifying}{book}{}
       \name{author}{1}{}{%
@@ -189,6 +493,29 @@
       \field{title}{Generalized consensus and Paxos}
       \field{year}{2005}
     \endentry
+    \entry{lamport2019safety}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{extraname}{3}
+      \field{labelalpha}{Lam19}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Safety, Liveness, and Fairness}
+      \field{year}{2019}
+    \endentry
     \entry{10.1145/177492.177726}{article}{}
       \name{author}{1}{}{%
         {{hash=5d77435450d10a850a5b58577b9a456b}{%
@@ -209,7 +536,7 @@
       \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
       \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
       \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{labelalpha}{Lam94}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
@@ -280,9 +607,14 @@
       \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{See http://research. microsoft. com/en-us/um/people/lamport/tla/formal-methods-amazon. pdf}
       \field{title}{Use of formal methods at Amazon Web Services}
       \field{year}{2014}
+      \verb{urlraw}
+      \verb http://research. microsoft.com/en-us/um/people/lamport/tla/formal-methods-amazon.pdf
+      \endverb
+      \verb{url}
+      \verb http://research.%20microsoft.com/en-us/um/people/lamport/tla/formal-methods-amazon.pdf
+      \endverb
     \endentry
     \entry{4567924}{inproceedings}{}
       \name{author}{1}{}{%
@@ -311,6 +643,66 @@
       \verb{doi}
       \verb 10.1109/SFCS.1977.32
       \endverb
+    \endentry
+    \entry{5470366}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=3b96bc51aa71906a97a3ec2b64366f25}{%
+           family={{Ramabhadran}},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f6490c81b8708cb76c2feac424127e11}{%
+           family={{Pasquale}},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4edb59de02e569530ce66aa82a286aaa}
+      \strng{fullhash}{4edb59de02e569530ce66aa82a286aaa}
+      \strng{bibnamehash}{4edb59de02e569530ce66aa82a286aaa}
+      \strng{authorbibnamehash}{4edb59de02e569530ce66aa82a286aaa}
+      \strng{authornamehash}{4edb59de02e569530ce66aa82a286aaa}
+      \strng{authorfullhash}{4edb59de02e569530ce66aa82a286aaa}
+      \field{labelalpha}{RP10}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 IEEE International Symposium on Parallel Distributed Processing (IPDPS)}
+      \field{title}{Analysis of durability in replicated distributed storage systems}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/IPDPS.2010.5470366
+      \endverb
+    \endentry
+    \entry{shirriff2006method}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=41e5bf8b28a1dbc2083b7423b3d42459}{%
+           family={Shirriff},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima W},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Google Patents}%
+      }
+      \strng{namehash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \strng{fullhash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \strng{bibnamehash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \strng{authorbibnamehash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \strng{authornamehash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \strng{authorfullhash}{41e5bf8b28a1dbc2083b7423b3d42459}
+      \field{labelalpha}{Shi06}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3~21}
+      \field{note}{US Patent 7,016,946}
+      \field{title}{Method and system for establishing a quorum for a geographically distributed cluster of computers}
+      \field{year}{2006}
     \endentry
     \entry{sullivan2004software}{inproceedings}{}
       \name{author}{5}{}{%
@@ -416,7 +808,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{1702415}
 \endrefsection
 \endinput
 

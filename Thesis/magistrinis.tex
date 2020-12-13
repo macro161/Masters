@@ -36,13 +36,13 @@
 	\sectionnonum{Įvadas}
 
 		Šiais laikais, kai kurios, programų sistemos yra išskirstytos \cite{mcr}. 
-		Tokios sistemos, kaip pavadinimas sufleruoja, yra kuriamos išskirstant skaičiavimo mazgus į atskiras, savarankiškas dalis.
-		Ne kaip monolitinės sistemos, išskirstytos sistemos gali veikti skirtingose serverinėse, kurios gali būti kitose geografinėje vietoje.
+		Tokios sistemos, kaip pavadinimas sufleruoja, yra kuriamos išskirstant skaičiavimo mazgus į atskiras, savarankiškas dalis \cite{coulouris2005distributed}.
+		Ne kaip monolitinės sistemos, išskirstytos sistemos gali veikti skirtingose serverinėse, kurios gali būti kitose geografinėse vietose \cite{shirriff2006method} .
 		Toks sistemos išskirstymas pasižymi šiomis savybėmis:
 		\begin{enumerate}
-			\item{Pasiekiamumas(angl. {\it Availability}) -- sistemos gebėjimas būti pasiekiamai vartotojui bet kuriuo metu.}
-			\item{Patvarumas(angl. {\it Durability}) -- išskirstytos sistemos užtikrina duomenų išlaikymą ir pastovų veikimą, net jeigu ir vienas iš paskirstytos sistemos mazgų nustotų veikti dėl sistemos sutrikimų sukeltų programos klaidų arba gamtos katastrofų, tokių kaip gaisrų, potvynių ir panašių nelaimių. Ši savybė taip pat užtikrina sistemos gebėjimą atsistatyti ir neprarasti duomenų po minėtų įvykių.}
-			\item{Plečiamumas(angl. {\it Scalability}) -- didėjant vartotojų skaičiui bei programų sistemos kompleksiškumui išskirstytos sistemos užtikriną vertikalų (Padidinti mazgo techninės įrangos galingumą) bei horizontalų (Padidinti mazgų skaičių sistemoje) plečiamumą.}
+			\item{Pasiekiamumas(angl. {\it Availability}) -- sistemos gebėjimas būti pasiekiamai vartotojui bet kuriuo metu \cite{180327} .}
+			\item{Patvarumas(angl. {\it Durability}) -- išskirstytos sistemos užtikrina duomenų išlaikymą ir pastovų veikimą, net jeigu ir vienas iš paskirstytos sistemos mazgų nustotų veikti dėl sistemos sutrikimų sukeltų programos klaidų arba gamtos katastrofų, tokių kaip gaisrų, potvynių ir panašių nelaimių. Ši savybė taip pat užtikrina sistemos gebėjimą atsistatyti ir neprarasti duomenų po minėtų įvykių \cite{5470366}.}
+			\item{Plečiamumas(angl. {\it Scalability}) -- didėjant vartotojų skaičiui bei programų sistemos kompleksiškumui išskirstytos sistemos užtikriną vertikalų (Padidinti mazgo techninės įrangos galingumą) bei horizontalų (Padidinti mazgų skaičių sistemoje) plečiamumą \cite{862209}.}
 			\item{Našumas(angl. {\it Efficiency}) -- sistemos vartotojų skaičius dažniausiai būna nepastovus, jis kinta dienos metu arba atitinkamais periodais metuose. Išskirstytos sistemos padeda užtikrinti našų įrangos resursų naudojimą sumažinant įrangos galingumą kai vartotojų skaičius yra nedidelis, bei padidinant galingumą kai sistemos apkrova padidėja.}
 		\end{enumerate}
 		Šiuo metu yra sukurta keletą atviro kodo išskirstytų sistemų padedančiu apdoroti realaus laiko duomenis.	
@@ -78,7 +78,7 @@
 		
 
 TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų sistemų formalias specifikacijas ir šias specifikacijas verifikuoti.
-		Naudojant TLA\textsuperscript{+} galima specifikuoti šias išskirstytų sistemų savybes \cite{1702415} :
+		Naudojant TLA\textsuperscript{+} galima specifikuoti šias išskirstytų sistemų savybes \cite{lamport2019safety} :
 		\begin{enumerate}
 			\item{Gyvumas -- geri dalykai galiausiai atsitinka programos vykdymo metu. Sistema galiausiai atliks jai paskirtą užduotį arba pateks į norimą būseną.}
 			\item{Saugumas -- blogi dalykai neatsitiks programos vykdymo metu. Sistema nesustos veikti netikėtai dėl iškilusios klaidos.}
@@ -87,9 +87,9 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		
 
 	Šias savybes mes galime patikrinti naudodamiesi TLC Model Checker (modelio tikrintojas).
-		TLC yra išreikštinės būsenos(explicit-state) modelio tikrintojas, kurio paskirtis yra pažingsniui pasiekti visas galimas sistemos būsenas pagal nurodytą formalią specifikaciją.
+		TLC yra išreikštinės būsenos(explicit-state) modelio tikrintojas, kurio paskirtis yra pažingsniui pasiekti visas galimas sistemos būsenas pagal nurodytą formalią specifikaciją \cite{yu1999model}.
 		Tačiau, kartais, pagal sukurtą formalią specifikaciją, susidaro labai daug būsenų kurias sistema gali pasiekti, todėl tampa nepraktiška naudoti TLC.
-		Tokiu atveju galime naudotis TLA\textsuperscript{+} specifikacijos įrodymo sistema TLAPS.
+		Tokiu atveju galime naudotis TLA\textsuperscript{+} specifikacijos įrodymo sistema TLAPS \cite{cousineau2012tla+}.
 		TLAPS yra įrodymų sistema skirta patikrinti TLA\textsuperscript{+} įrodymus.
 		Šios sistemos paskirtis yra patikrinti pateiktus teoremų įrodymus.
 		Įrodžius teoremą laikoma, kad TLA\textsuperscript{+} specifikacija yra korektiška.
@@ -127,7 +127,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Betaisant rastos ir pataisytos dar kelios klaidos.
 
 
-		Šiame darbe specifikuosime ir verifikuosime Kafka kūrėjų pasiūlytą Raft algoritmo implementaciją.
+		Šiame darbe specifikuosime ir verifikuosime Kafka kūrėjų pasiūlytą Raft algoritmo \cite{10.1145/2723872.2723876} implementaciją \cite{raftimpl}.
 		Raft protokolas yra skirtas pasiekti susitarimą išskirstytoje sistemoje.
 		Kad pasiekti susitarimą tarp sistemos mazgų kiekvienas mazgas turi lyderio arba sekėjo rolę.
 		Algoritme lyderis yra atsakingas už informacijos replikavimą savo sekėjams mazgams.
@@ -135,8 +135,8 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Jeigu siekėjas nesulaukia signalo iš lyderio sistemoje prasideda naujo lyderio rinkimas.
 		
 		
-		Kafka pasiūlyto Raft algoritmo implementacija būtų naudojama duomenų replikavimui.
-		Nors Raft algoritmui jau yra sukurtų formalių specifikacijų TLA\textsuperscript{+} kalba, tačiau pasiūlyta implementacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
+		Kafka pasiūlyto Raft algoritmo implementacija būtų naudojama duomenų replikavimui \cite{raftimpl}.
+		Nors Raft algoritmui jau yra sukurtų formalių specifikacijų TLA\textsuperscript{+} kalba \cite{rafttla}, tačiau pasiūlyta implementacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
 
 
 		Iki šiol, kiek mums žinoma, Kafka platforma buvo specifikuota tik vieną kartą \cite{kfkTla} neakademiniame kontekste ir sukurta specifikacija atnešė naudos padedant surasti sistemos klaidas.
