@@ -93,11 +93,26 @@
       \verb https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-10635?filter=allopenissues
       \endverb
     \endentry
-    \entry{ltx}{misc}{}
+    \entry{kfkis}{misc}{}
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extraalpha}{5}
+      \field{labeltitlesource}{title}
+      \field{title}{Kafka sutrikimų registravimo sistema}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://issues.apache.org/jira/projects/KAFKA
+      \endverb
+      \verb{url}
+      \verb https://issues.apache.org/jira/projects/KAFKA
+      \endverb
+    \endentry
+    \entry{ltx}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{6}
       \field{labeltitlesource}{title}
       \field{title}{Latex is cool}
       \field{year}{2020}
@@ -106,6 +121,36 @@
       \endverb
       \verb{url}
       \verb https://kafka.apache.org/
+      \endverb
+    \endentry
+    \entry{kfkisthr}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{7}
+      \field{labeltitlesource}{title}
+      \field{title}{Lengtyvių sąlyga gali sukelti atsilikimą kitoms aktyvioms užduotims}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://issues.apache.org/jira/browse/KAFKA-9846
+      \endverb
+      \verb{url}
+      \verb https://issues.apache.org/jira/browse/KAFKA-9846
+      \endverb
+    \endentry
+    \entry{kfkistwo}{misc}{}
+      \field{labelalpha}{20}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extraalpha}{8}
+      \field{labeltitlesource}{title}
+      \field{title}{Lengtyvių sąlygos sutrikimas FindCoordinatorFuture klasėje}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://issues.apache.org/jira/browse/KAFKA-10793
+      \endverb
+      \verb{url}
+      \verb https://issues.apache.org/jira/browse/KAFKA-10793
       \endverb
     \endentry
     \entry{coulouris2005distributed}{book}{}
@@ -776,6 +821,30 @@
       \verb{url}
       \verb https://www.globenewswire.com/news-release/2018/09/20/1573625/0/en/New-Research-Shows-63-Percent-of-Enterprises-Are-Adopting-Microservices-Architectures-Yet-50-Percent-Are-Unaware-of-the-Impact-on-Revenue-Generating-Business-Processes.html
       \endverb
+    \endentry
+    \entry{kfkBug}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=09c21c07c2fe626dc42954d41354a0e1}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{09c21c07c2fe626dc42954d41354a0e1}
+      \strng{fullhash}{09c21c07c2fe626dc42954d41354a0e1}
+      \strng{bibnamehash}{09c21c07c2fe626dc42954d41354a0e1}
+      \strng{authorbibnamehash}{09c21c07c2fe626dc42954d41354a0e1}
+      \strng{authornamehash}{09c21c07c2fe626dc42954d41354a0e1}
+      \strng{authorfullhash}{09c21c07c2fe626dc42954d41354a0e1}
+      \field{labelalpha}{War20}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://issues.apache.org/jira/browse/KAFKA-9957}}
+      \field{note}{Kafka problemų sistemoje paskelbtas sistemos sutrikimas}
+      \field{title}{Kafka Controller doesn't failover during hardware failure}
+      \field{year}{2020}
     \endentry
     \entry{819971}{article}{}
       \name{author}{1}{}{%
