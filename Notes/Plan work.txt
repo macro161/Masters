@@ -1,0 +1,53 @@
+Pagalvoti kas bus daroma jeigu bus nesurasta jokiu 
+klaidu raft algoritme
+
+I skaidres ir uzdavinius nedeti literaturos apzvalgos
+
+Aprasyti, kodel pasirinkau logginima kaip formalaus 
+verifikavimo buda
+
+Kaip bus surastos kitos paskirstytos sistemos
+kuriose bus naudojamas Raft algoritmas
+
+Buti labiau specifiskam kokie kiti algoritmai 
+bus specifikuojami
+
+Teigiama, kad "Šiuo metu yra sukurta keletas 
+atviro kodo išskirstytų sistemų, padedančių 
+apdoroti realaus laiko duomenis", bet nėra aišku 
+nei kokios tos sistemos (išskyrus vieną paminėtą), 
+nei kas tas realus laikas, nei apie kokius duomenis 
+kalbama.
+
+Teigiama, kad "norint atrasti subtilesnius 
+sisteminius sutrikimus tenka naudoti kitus metodus, 
+tokius kaip formalus specifikavimas ir 
+verifikavimas", bet šis teiginys turėtų
+bti išplėtotas, galbūt pagrįstas pavyzdžiais.
+
+Toliau kalbama apie TLA+, bet nepaminimas 
+ar yra alternatyvų.
+
+Nėra aišku kas tas Raft algoritmas ir 
+kodėl jis atsiranda tik ketvirtame puslapyje, 
+įvade apie jį neminint.
+
+Rašoma, kad "pasinaudosime modeliu parem tu 
+pėdsakų tikrinimo (angl. Model-Based Trace-Checking) 
+metodu", bet nepateikiama argumentacija kodėl.
+
+Laukiami rezultatai neatitinka 
+suformuluotų uždavinių.
+
+nenurodyta recenzento pareigos (asist. dr.)
+
+pirmasis puslapis yra titulinis (ne turinys)
+
+- žodis "dizainas" naudojamas ne pagal paskirtį
+
+- yra rašybos klaidų "netrivialiuose sistemose", 
+Lengtynių sąlyga"
+
+- implementacija reiktų keisti realizacija
+
+- sąrašuose tarpai tarp eilučių per dideli
