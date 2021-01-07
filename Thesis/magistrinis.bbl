@@ -153,6 +153,61 @@
       \verb https://issues.apache.org/jira/browse/KAFKA-10793
       \endverb
     \endentry
+    \entry{bjorner1978vienna}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=8cf6be35a54386562a12426b3fade413}{%
+           family={Bjorner},
+           familyi={B\bibinitperiod},
+           given={Dines},
+           giveni={D\bibinitperiod}}}%
+        {{hash=34ac665e49b86155ac234e6a9385e7c2}{%
+           family={CB},
+           familyi={C\bibinitperiod},
+           given={JONES},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fff5b196ea62427b7c367c780093722e}
+      \strng{fullhash}{fff5b196ea62427b7c367c780093722e}
+      \strng{bibnamehash}{fff5b196ea62427b7c367c780093722e}
+      \strng{authorbibnamehash}{fff5b196ea62427b7c367c780093722e}
+      \strng{authornamehash}{fff5b196ea62427b7c367c780093722e}
+      \strng{authorfullhash}{fff5b196ea62427b7c367c780093722e}
+      \field{labelalpha}{BC\textsuperscript {+}78}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Vienna Development Method: The Meta-Language.}
+      \field{year}{1978}
+    \endentry
+    \entry{bowen1996formal}{book}{}
+      \name{author}{1}{}{%
+        {{hash=43f5f73c5ef7a6d15dab0cd330ab935c}{%
+           family={Bowen},
+           familyi={B\bibinitperiod},
+           given={Jonathan\bibnamedelima Peter},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Thomson Computer Press London}%
+      }
+      \strng{namehash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \strng{fullhash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \strng{bibnamehash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \strng{authorbibnamehash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \strng{authornamehash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \strng{authorfullhash}{43f5f73c5ef7a6d15dab0cd330ab935c}
+      \field{labelalpha}{Bow96}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Formal specification and documentation using Z: A case study approach}
+      \field{volume}{66}
+      \field{year}{1996}
+    \endentry
     \entry{coulouris2005distributed}{book}{}
       \name{author}{3}{}{%
         {{hash=0e1fba7a47e533aa9c3fdeda01f7eb42}{%
@@ -450,6 +505,41 @@
       \field{pages}{54\bibrangedash 66}
       \range{pages}{13}
     \endentry
+    \entry{jiryu2020extreme}{article}{}
+      \name{author}{3}{}{%
+        {{hash=18a97a1dfc405728d3fe999d35275057}{%
+           family={Jiryu\bibnamedelima Davis},
+           familyi={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={A\bibnamedelima Jesse},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7194ccd5c13d1513a1f3199ab2018766}{%
+           family={Hirschhorn},
+           familyi={H\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=712b8f7a62bfecf709354a3497879b12}{%
+           family={Schvimer},
+           familyi={S\bibinitperiod},
+           given={Judah},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{233e60f893900f0cda121753c8dd7087}
+      \strng{fullhash}{233e60f893900f0cda121753c8dd7087}
+      \strng{bibnamehash}{233e60f893900f0cda121753c8dd7087}
+      \strng{authorbibnamehash}{233e60f893900f0cda121753c8dd7087}
+      \strng{authornamehash}{233e60f893900f0cda121753c8dd7087}
+      \strng{authorfullhash}{233e60f893900f0cda121753c8dd7087}
+      \field{labelalpha}{JHS20}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv e-prints}
+      \field{title}{eXtreme Modelling in Practice}
+      \field{year}{2020}
+      \field{pages}{arXiv\bibrangedash 2006}
+      \range{pages}{-1}
+    \endentry
     \entry{862209}{article}{}
       \name{author}{2}{}{%
         {{hash=fc0827a6465de093b631cab316e9c6ce}{%
@@ -661,6 +751,48 @@
       \verb http://research.%20microsoft.com/en-us/um/people/lamport/tla/formal-methods-amazon.pdf
       \endverb
     \endentry
+    \entry{O’Regan2017}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=2df87681b0f6a438c6325bb2ec8f2dd8}{%
+           family={O'Regan},
+           familyi={O\bibinitperiod},
+           given={Gerard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \strng{fullhash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \strng{bibnamehash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \strng{authorbibnamehash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \strng{authornamehash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \strng{authorfullhash}{2df87681b0f6a438c6325bb2ec8f2dd8}
+      \field{labelalpha}{ORe17}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter presents the Z specification language, which is one of the most widely used formal methods. Z is a formal specification language based on Zermelo set theory. It was developed at the Programming Research Group at Oxford University in the early 1980s. Z specifications are mathematical and employ a classical two-valued logic. The use of mathematics ensures precision and allows inconsistencies and gaps in the specification to be identified. Theorem provers may be employed to demonstrate that the software implementation meets its specification.}
+      \field{booktitle}{Concise Guide to Formal Methods: Theory, Fundamentals and Industry Applications}
+      \field{isbn}{978-3-319-64021-1}
+      \field{title}{Z Formal Specification Language}
+      \field{year}{2017}
+      \field{pages}{155\bibrangedash 171}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-319-64021-1_8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-319-64021-1_8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-64021-1_8
+      \endverb
+    \endentry
     \entry{4567924}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=e84ce1b23682e35f78bc43024826a300}{%
@@ -820,6 +952,68 @@
       \endverb
       \verb{url}
       \verb https://www.globenewswire.com/news-release/2018/09/20/1573625/0/en/New-Research-Shows-63-Percent-of-Enterprises-Are-Adopting-Microservices-Architectures-Yet-50-Percent-Are-Unaware-of-the-Impact-on-Revenue-Generating-Business-Processes.html
+      \endverb
+    \endentry
+    \entry{Slaats1998}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=07622c56afb6eb25cbde685bf1e72482}{%
+           family={Slaats},
+           familyi={S\bibinitperiod},
+           given={Noemie},
+           giveni={N\bibinitperiod}}}%
+        {{hash=865ca1500c74c6adc37ea47e3562861e}{%
+           family={Van\bibnamedelima Assche},
+           familyi={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=36ea774e9eb3fc383f80de039d1c090f}{%
+           family={Hoogewijs},
+           familyi={H\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=66ff062050ecd31e070131001b595819}{%
+           family={Bicarregui},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{fullhash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{bibnamehash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{authorbibnamehash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{authornamehash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{authorfullhash}{96019228dcbaaf2ef2f035b31f9f3cb7}
+      \strng{editorbibnamehash}{66ff062050ecd31e070131001b595819}
+      \strng{editornamehash}{66ff062050ecd31e070131001b595819}
+      \strng{editorfullhash}{66ff062050ecd31e070131001b595819}
+      \field{labelalpha}{SVH98}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Explicitly parallel programs consist of several threads, where each thread is executed by a different processing unit. These threads all have access to a shared memory, and communicate by writing to or reading from the shared memory. Reads and writes of different threads execute uncoordinatedly. Threads can wait for other threads by using synchronization. Although reading and writing the shared memory is similar in all shared memory systems, most shared memory systems have their own set of synchronization instructions. The semantics of the memory access and synchronization instructions together is called a memory model, which is usually specified informally or using a formalism specific to the memory model. We present a unified formalization of shared memory models both in traditional and in VDM notation. We also show how the Mural tool helps in writing the VDM specifications and in generating the corresponding formal theory. A proof constructed with Mural shows that even basic properties of this formal theory can be nontrivial to prove.}
+      \field{booktitle}{Proof in VDM: Case Studies}
+      \field{isbn}{978-1-4471-1532-8}
+      \field{title}{Shared Memory Synchronization}
+      \field{year}{1998}
+      \field{pages}{123\bibrangedash 156}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-1532-8_5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-4471-1532-8_5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-4471-1532-8_5
       \endverb
     \endentry
     \entry{kfkBug}{misc}{}
