@@ -1,9 +1,6 @@
 Pagalvoti kas bus daroma jeigu bus nesurasta jokiu 
 klaidu raft algoritme
 
-Aprasyti, kodel pasirinkau logginima kaip formalaus 
-verifikavimo buda
-
 Kaip bus surastos kitos paskirstytos sistemos
 kuriose bus naudojamas Raft algoritmas
 
@@ -33,10 +30,3 @@ kodėl jis atsiranda tik ketvirtame puslapyje,
 Rašoma, kad "pasinaudosime modeliu parem tu 
 pėdsakų tikrinimo (angl. Model-Based Trace-Checking) 
 metodu", bet nepateikiama argumentacija kodėl.
-
-Laukiami rezultatai neatitinka 
-suformuluotų uždavinių.
-
-- žodis "dizainas" naudojamas ne pagal paskirtį
-
-- sąrašuose tarpai tarp eilučių per dideli
