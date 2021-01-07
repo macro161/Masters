@@ -14,6 +14,7 @@
 \usepackage{wrapfig}
 
 
+
 \university{Vilniaus universitetas}
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Informatikos institutas}
@@ -23,15 +24,19 @@
 \author{Matas Savickis}
 
 \supervisor{Karolis Petrauskas, Doc., Dr.}
-\reviewer{Vytautas Valaitis}
+\reviewer{Valaitis Vytautas, Asist., Dr.}
 \date{Vilnius – \the\year}
 
 \bibliography{bibliografija}
 
 \begin{document}
-\maketitle
+\pagenumbering{arabic}
 
+\maketitle
+\setcounter{page}{2}
 \tableofcontents
+
+
 
 	\sectionnonum{Įvadas}
 
@@ -60,7 +65,7 @@
 		Norėdami užtikrinti Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų \cite{kfkGH}.
 		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo \cite{819971}.
 		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
-		Net ir paskyrus daugiau resursų testavimui netrivialiuose sistemose, tokiose kaip Kafka, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
+		Net ir paskyrus daugiau resursų testavimui sudėtinguose sistemose, tokiose kaip Kafka, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
 		Todėl norint atrasti subtilesnius sisteminius sutrikimus tenka naudoti kitus metodus, tokius kaip formalus specifikavimas ir verifikavimas.
 
 
@@ -96,7 +101,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 
 
 		Tačiau parašyti formalią specifikaciją yra negana.
-		Kartais gali nutikti taip, kad algoritmo implementacija neatitiks jos reikalavimų.
+		Kartais gali nutikti taip, kad algoritmo realizacija neatitiks jos reikalavimų.
 		Mūsų sudaryta specifikacija gali būti adekvati pagal pateiktus reikalavimus, tačiau sistemos kūrėjai šiuos reikalavimus gali įgyvendinti nekorektiškai.
 		Norint to išvengti turime patikrinti ar sistemos įgyvendinimas atitinka specifikaciją.
 		Tą pasieksime atlikdami formalią verifikaciją naudodami Kafka įvykių žurnalą.
@@ -127,7 +132,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Taisant taip pat rastos ir pataisytos dar kelios klaidos.
 
 
-		Šiame darbe specifikuosime ir verifikuosime Kafka kūrėjų pasiūlytą Raft algoritmo \cite{10.1145/2723872.2723876} implementaciją \cite{raftimpl}.
+		Šiame darbe specifikuosime ir verifikuosime Kafka kūrėjų pasiūlytą Raft algoritmo \cite{10.1145/2723872.2723876} realizaciją \cite{raftimpl}.
 		Raft protokolas yra skirtas pasiekti susitarimą išskirstytoje sistemoje.
 		Norint pasiekti susitarimą tarp sistemos mazgų, kiekvienas mazgas turi turėti lyderio arba sekėjo rolę.
 		Algoritme lyderis yra atsakingas už informacijos replikavimą savo sekėjams.
@@ -135,8 +140,8 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Jeigu sekėjas nesulaukia signalo iš lyderio, sistemoje prasideda naujo lyderio rinkimas.
 		
 		
-		Kafka pasiūlyto Raft algoritmo implementacija būtų naudojama duomenų replikavimui \cite{raftimpl}.
-		Nors Raft algoritmui jau yra sukurta formalių specifikacijų TLA\textsuperscript{+} kalba \cite{rafttla}, tačiau pasiūlyta implementacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
+		Kafka pasiūlyto Raft algoritmo realizacija būtų naudojama duomenų replikavimui \cite{raftimpl}.
+		Nors Raft algoritmui jau yra sukurta formalių specifikacijų TLA\textsuperscript{+} kalba \cite{rafttla}, tačiau pasiūlyta realizacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
 
 
 		Kafka sutrikimų sekimo sistemoje yra aprašoma ir kitų Kafka sutrikimų \cite{kfkis} , kuriuos būtų galima formaliai specifikuoti ir verifikuoti taip parodant algoritmų problemas.
@@ -144,7 +149,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Sutrikimai, kuriuos būtų galima formaliai specifikuoti ir verifikuoti:
 		\begin{itemize}
 			\item{Kafka Valdiklis neišsijungia teisingai kai įvyksta techninis gedimas \cite{kfkBug}}
-			\item{Lengtynių sąlyga klasėje FindCoordinatorFuture visam laikui nutraukia sąsaja su grupės koordinatoriumi \cite{kfkistwo}}
+			\item{Lenktynių sąlyga klasėje FindCoordinatorFuture visam laikui nutraukia sąsaja su grupės koordinatoriumi \cite{kfkistwo}}
 			\item{Lengtyvių sąlyga gali sukelti atsilikimą kitoms aktyvioms užduotims \cite{kfkisthr}}
 		\end{itemize}
 		Visi šie pateikti sutrikimai buvo įvardinti kaip kritiniai ir nepradėti taisyti, todėl papildoma informacija gauta formaliai specifikuojant juos galimai padėtu išspręsti šias problemas.
@@ -168,7 +173,6 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 	
 	\sectionnonum{Uždaviniai}
 		\begin{enumerate}
-			\item{Išnagrinėti literatūrą susijusią su formaliais metodais, TLA\textsuperscript{+} specifikavimo kalba bei Kafka platforma.}
 			\item{Formaliai specifikuoti pasirinktus Kafka platformos algoritmus naudojant TLA\textsuperscript{+} specifikavimo kalbą. Šiame žingsnyje formaliai aprašysme pasirinktus algoritmus ir jų savybes, kad galėtume patikrinti jų korektiškumą.}
 			\item{Verifikuoti ar pagal sukurtą specifikaciją Kafka platforma veikia korektiškai. Verifikacija bus atliekama naudojant modeliu paremtu pėdsakų tikrinimo (angl. {\it Model-Based Trace-Checking}) metodu. }
 			\item{Esant poreikiui įrodyti specifikacijos savybes naudojant TLAPS. Šios užduoties prireik, jeigu formalios specifikacijos tikrinimas TLC modelio tikrintoju užtruktų perdaug laiko.}
