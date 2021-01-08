@@ -19,10 +19,26 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{fraud}{article}{}
+      \field{labelalpha}{18}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extraalpha}{1}
+      \field{labeltitlesource}{title}
+      \field{title}{Building A Streaming Fraud Detection System With Kafka And Python}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/
+      \endverb
+      \verb{url}
+      \verb https://florimond.dev/blog/articles/2018/09/building-a-streaming-fraud-detection-system-with-kafka-and-python/
+      \endverb
+    \endentry
     \entry{rafttla}{misc}{}
       \field{labelalpha}{18}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{extraalpha}{2}
       \field{labeltitlesource}{title}
       \field{title}{Raft formal specification with TLA+}
       \field{year}{2018}
@@ -505,6 +521,38 @@
       \field{pages}{54\bibrangedash 66}
       \range{pages}{13}
     \endentry
+    \entry{iqbal2015big}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bf7478744117b45074bd740961fe2745}{%
+           family={Iqbal},
+           familyi={I\bibinitperiod},
+           given={Muhammad\bibnamedelima Hussain},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=237afa8e2f477ed639cf574dd9a45d83}{%
+           family={Soomro},
+           familyi={S\bibinitperiod},
+           given={Tariq\bibnamedelima Rahim},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a8e3810445984ff1421626f085cd6f2}
+      \strng{fullhash}{8a8e3810445984ff1421626f085cd6f2}
+      \strng{bibnamehash}{8a8e3810445984ff1421626f085cd6f2}
+      \strng{authorbibnamehash}{8a8e3810445984ff1421626f085cd6f2}
+      \strng{authornamehash}{8a8e3810445984ff1421626f085cd6f2}
+      \strng{authorfullhash}{8a8e3810445984ff1421626f085cd6f2}
+      \field{labelalpha}{IS15}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer trends and technology}
+      \field{number}{1}
+      \field{title}{Big data analysis: Apache storm perspective}
+      \field{volume}{19}
+      \field{year}{2015}
+      \field{pages}{9\bibrangedash 14}
+      \range{pages}{6}
+    \endentry
     \entry{jiryu2020extreme}{article}{}
       \name{author}{3}{}{%
         {{hash=18a97a1dfc405728d3fe999d35275057}{%
@@ -573,6 +621,34 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1109/71.862209
+      \endverb
+    \endentry
+    \entry{tracking}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e41ac7f4933d8c0fdaefc15cedebcb77}{%
+           family={Kirinde},
+           familyi={K\bibinitperiod},
+           given={Chamath},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \strng{fullhash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \strng{bibnamehash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \strng{authorbibnamehash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \strng{authornamehash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \strng{authorfullhash}{e41ac7f4933d8c0fdaefc15cedebcb77}
+      \field{labelalpha}{Kir17}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-time activity tracking with Kafka}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://medium.com/@jchamath/real-time-activity-tracking-with-kafka-f07ce56da90e
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@jchamath/real-time-activity-tracking-with-kafka-f07ce56da90e
       \endverb
     \endentry
     \entry{lamport2002specifying}{book}{}
@@ -854,6 +930,42 @@
       \verb 10.1109/IPDPS.2010.5470366
       \endverb
     \endentry
+    \entry{snyder2011activemq}{book}{}
+      \name{author}{3}{}{%
+        {{hash=cebf19b5399fb2fa09eaf0209e4c1c2d}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7df266ca03cc4c26b15f08cac17fd3ed}{%
+           family={Bosnanac},
+           familyi={B\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fc94a151f33661c6bd88d07b4ef023f7}{%
+           family={Davies},
+           familyi={D\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Greenwich Conn.}%
+      }
+      \strng{namehash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \strng{fullhash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \strng{bibnamehash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \strng{authorbibnamehash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \strng{authornamehash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \strng{authorfullhash}{7b58390f0eac454cc5bc98f6704d2b7e}
+      \field{labelalpha}{SBD11}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ActiveMQ in action}
+      \field{volume}{47}
+      \field{year}{2011}
+    \endentry
     \entry{shirriff2006method}{misc}{}
       \name{author}{1}{}{%
         {{hash=41e5bf8b28a1dbc2083b7423b3d42459}{%
@@ -954,6 +1066,32 @@
       \verb https://www.globenewswire.com/news-release/2018/09/20/1573625/0/en/New-Research-Shows-63-Percent-of-Enterprises-Are-Adopting-Microservices-Architectures-Yet-50-Percent-Are-Unaware-of-the-Impact-on-Revenue-Generating-Business-Processes.html
       \endverb
     \endentry
+    \entry{spark2018apache}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d3deb7a1042be3f85838fe9c3c3fd1f9}{%
+           family={Spark},
+           familyi={S\bibinitperiod},
+           given={Apache},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \strng{fullhash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \strng{bibnamehash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \strng{authorbibnamehash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \strng{authornamehash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \strng{authorfullhash}{d3deb7a1042be3f85838fe9c3c3fd1f9}
+      \field{labelalpha}{Spa18}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Retrieved January}
+      \field{title}{Apache spark}
+      \field{volume}{17}
+      \field{year}{2018}
+      \field{pages}{2018}
+      \range{pages}{1}
+    \endentry
     \entry{Slaats1998}{inbook}{}
       \name{author}{3}{}{%
         {{hash=07622c56afb6eb25cbde685bf1e72482}{%
@@ -1014,6 +1152,34 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/978-1-4471-1532-8_5
+      \endverb
+    \endentry
+    \entry{iot}{article}{}
+      \name{author}{1}{}{%
+        {{hash=626e6ae29145ffb3876a6c80b24a5688}{%
+           family={Waehner},
+           familyi={W\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{626e6ae29145ffb3876a6c80b24a5688}
+      \strng{fullhash}{626e6ae29145ffb3876a6c80b24a5688}
+      \strng{bibnamehash}{626e6ae29145ffb3876a6c80b24a5688}
+      \strng{authorbibnamehash}{626e6ae29145ffb3876a6c80b24a5688}
+      \strng{authornamehash}{626e6ae29145ffb3876a6c80b24a5688}
+      \strng{authorfullhash}{626e6ae29145ffb3876a6c80b24a5688}
+      \field{labelalpha}{Wae19}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet of Things (IoT) and Event Streaming at Scale with Apache Kafka and MQTT}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.confluent.io/blog/iot-with-kafka-connect-mqtt-and-rest-proxy/
+      \endverb
+      \verb{url}
+      \verb https://www.confluent.io/blog/iot-with-kafka-connect-mqtt-and-rest-proxy/
       \endverb
     \endentry
     \entry{kfkBug}{misc}{}

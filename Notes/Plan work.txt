@@ -1,6 +1,3 @@
-Pagalvoti kas bus daroma jeigu bus nesurasta jokiu 
-klaidu raft algoritme
-
 Kaip bus surastos kitos paskirstytos sistemos
 kuriose bus naudojamas Raft algoritmas
 
@@ -19,9 +16,6 @@ sisteminius sutrikimus tenka naudoti kitus metodus,
 tokius kaip formalus specifikavimas ir 
 verifikavimas", bet šis teiginys turėtų
 bti išplėtotas, galbūt pagrįstas pavyzdžiais.
-
-Toliau kalbama apie TLA+, bet nepaminimas 
-ar yra alternatyvų.
 
 Nėra aišku kas tas Raft algoritmas ir 
 kodėl jis atsiranda tik ketvirtame puslapyje, 
