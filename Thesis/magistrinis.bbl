@@ -124,26 +124,11 @@
       \verb https://issues.apache.org/jira/projects/KAFKA
       \endverb
     \endentry
-    \entry{ltx}{misc}{}
-      \field{labelalpha}{20}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{6}
-      \field{labeltitlesource}{title}
-      \field{title}{Latex is cool}
-      \field{year}{2020}
-      \verb{urlraw}
-      \verb https://kafka.apache.org/
-      \endverb
-      \verb{url}
-      \verb https://kafka.apache.org/
-      \endverb
-    \endentry
     \entry{kfkisthr}{misc}{}
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{7}
+      \field{extraalpha}{6}
       \field{labeltitlesource}{title}
       \field{title}{Lengtyvių sąlyga gali sukelti atsilikimą kitoms aktyvioms užduotims}
       \field{year}{2020}
@@ -158,7 +143,7 @@
       \field{labelalpha}{20}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{extraalpha}{8}
+      \field{extraalpha}{7}
       \field{labeltitlesource}{title}
       \field{title}{Lengtyvių sąlygos sutrikimas FindCoordinatorFuture klasėje}
       \field{year}{2020}
@@ -312,6 +297,39 @@
       \field{pages}{147\bibrangedash 154}
       \range{pages}{8}
     \endentry
+    \entry{davis2020extreme}{article}{}
+      \name{author}{3}{}{%
+        {{hash=19d303b1041cdc078a154a21c27def2d}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=712b8f7a62bfecf709354a3497879b12}{%
+           family={Schvimer},
+           familyi={S\bibinitperiod},
+           given={Judah},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7194ccd5c13d1513a1f3199ab2018766}{%
+           family={Hirschhorn},
+           familyi={H\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{574be4a5a51c5bf74ef17b0230851570}
+      \strng{fullhash}{574be4a5a51c5bf74ef17b0230851570}
+      \strng{bibnamehash}{574be4a5a51c5bf74ef17b0230851570}
+      \strng{authorbibnamehash}{574be4a5a51c5bf74ef17b0230851570}
+      \strng{authornamehash}{574be4a5a51c5bf74ef17b0230851570}
+      \strng{authorfullhash}{574be4a5a51c5bf74ef17b0230851570}
+      \field{labelalpha}{DSH20}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2006.00915}
+      \field{title}{eXtreme Modelling in Practice}
+      \field{year}{2020}
+    \endentry
     \entry{180327}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=18f45967b2216582a8ebae1a5f7ea632}{%
@@ -389,6 +407,90 @@
       \field{note}{Pristatymas konferencijoje}
       \field{title}{Hardening Kafka Replication}
       \field{year}{2004}
+    \endentry
+    \entry{howard2011modelbased}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=dec07a52bf7758a12c4903212288b2bc}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1cd81e867b18d9124dddc497f198078c}{%
+           family={Gruner},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eed18b847f56b5fdd3dc14d2b41cedf2}{%
+           family={Gravell},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9f53e82751959369ad1f5dfa01d98040}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=59b2409539c15a154049f079712c5143}{%
+           family={Augusto},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \strng{fullhash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \strng{bibnamehash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \strng{authorbibnamehash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \strng{authornamehash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \strng{authorfullhash}{ceb816ae64c9b5deeeda1814fe55fa79}
+      \field{labelalpha}{HGG\textsuperscript {+}11}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LO}
+      \field{eprinttype}{arXiv}
+      \field{title}{Model-Based Trace-Checking}
+      \field{year}{2011}
+      \verb{eprint}
+      \verb 1111.2825
+      \endverb
+    \endentry
+    \entry{houhou2017framework}{article}{}
+      \name{author}{4}{}{%
+        {{hash=de086cfefb1193a821f1e0e7109bd420}{%
+           family={Houhou},
+           familyi={H\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d03c67920496b65c043944344e66f1f}{%
+           family={Kahloul},
+           familyi={K\bibinitperiod},
+           given={Laid},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d2852a3c35be4b8cfe590ea4ce364169}{%
+           family={Benharzallah},
+           familyi={B\bibinitperiod},
+           given={Saber},
+           giveni={S\bibinitperiod}}}%
+        {{hash=979ebbd11bafb2d381027f617fe8a84c}{%
+           family={Bettira},
+           familyi={B\bibinitperiod},
+           given={Roufaida},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{288e3baf3da90905bdd0722b50eaedf9}
+      \strng{fullhash}{288e3baf3da90905bdd0722b50eaedf9}
+      \strng{bibnamehash}{288e3baf3da90905bdd0722b50eaedf9}
+      \strng{authorbibnamehash}{288e3baf3da90905bdd0722b50eaedf9}
+      \strng{authornamehash}{288e3baf3da90905bdd0722b50eaedf9}
+      \strng{authorfullhash}{288e3baf3da90905bdd0722b50eaedf9}
+      \field{labelalpha}{HKB\textsuperscript {+}17}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Framework for Wireless Sensor Networks Code Generation from Formal Specification}
+      \field{year}{2017}
     \endentry
     \entry{holzmann1995improvement}{incollection}{}
       \name{author}{2}{}{%
@@ -622,6 +724,41 @@
       \verb{doi}
       \verb 10.1109/71.862209
       \endverb
+    \endentry
+    \entry{kern1999formal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cb10d3e580dacf8bda6d5d7c3539f69d}{%
+           family={Kern},
+           familyi={K\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=91aeb5e8dc1f57d35d5e80b5bf974658}{%
+           family={Greenstreet},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{3fbe2ce20040212ac931f0bded835236}
+      \strng{fullhash}{3fbe2ce20040212ac931f0bded835236}
+      \strng{bibnamehash}{3fbe2ce20040212ac931f0bded835236}
+      \strng{authorbibnamehash}{3fbe2ce20040212ac931f0bded835236}
+      \strng{authornamehash}{3fbe2ce20040212ac931f0bded835236}
+      \strng{authorfullhash}{3fbe2ce20040212ac931f0bded835236}
+      \field{labelalpha}{KG99}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Design Automation of Electronic Systems (TODAES)}
+      \field{number}{2}
+      \field{title}{Formal verification in hardware design: a survey}
+      \field{volume}{4}
+      \field{year}{1999}
+      \field{pages}{123\bibrangedash 193}
+      \range{pages}{71}
     \endentry
     \entry{tracking}{article}{}
       \name{author}{1}{}{%
@@ -1153,6 +1290,36 @@
       \verb{url}
       \verb https://doi.org/10.1007/978-1-4471-1532-8_5
       \endverb
+    \endentry
+    \entry{utting2010practical}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fd2b417e52982345bc826389bae4a156}{%
+           family={Utting},
+           familyi={U\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=925c8ebfdef9301e26dd7a09bd6f6cf5}{%
+           family={Legeard},
+           familyi={L\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1716f250997bd7844a6d7027681ffa46}
+      \strng{fullhash}{1716f250997bd7844a6d7027681ffa46}
+      \strng{bibnamehash}{1716f250997bd7844a6d7027681ffa46}
+      \strng{authorbibnamehash}{1716f250997bd7844a6d7027681ffa46}
+      \strng{authornamehash}{1716f250997bd7844a6d7027681ffa46}
+      \strng{authorfullhash}{1716f250997bd7844a6d7027681ffa46}
+      \field{labelalpha}{UL10}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Practical model-based testing: a tools approach}
+      \field{year}{2010}
     \endentry
     \entry{iot}{article}{}
       \name{author}{1}{}{%

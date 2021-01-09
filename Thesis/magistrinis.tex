@@ -110,11 +110,12 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 
 
 		Tačiau parašyti formalią specifikaciją yra negana.
-		Kartais gali nutikti taip, kad algoritmo realizacija neatitiks jos reikalavimų.
+		Kartais gali nutikti taip, kad algoritmo realizacija neatitiks jo reikalavimų.
 		Mūsų sudaryta specifikacija gali būti adekvati pagal pateiktus reikalavimus, tačiau sistemos kūrėjai šiuos reikalavimus gali įgyvendinti nekorektiškai.
 		Norint to išvengti turime patikrinti ar sistemos įgyvendinimas atitinka specifikaciją.
-		Tą pasieksime atlikdami formalią verifikaciją naudodami Kafka įvykių žurnalą.
-		Tam atlikti pasinaudosime modeliu paremtu pėdsakų tikrinimo (angl. {\it Model-Based Trace-Checking}) metodu \cite{ltx}.
+		Yra skirtingų būdų patikrinti ar specifikacija atitinka realizacija: specifikacijos ir realizacijos rašymas ta pačia programavimo kalba \cite{kern1999formal}, programinio kodo generavima naudojantis specifikacija \cite{houhou2017framework}, testų generavimas naudojant specifikaciją \cite{utting2010practical}.
+		Mūsų darbo atveju šie metodai netika, nes realizuotas kodas jau bus parašytas Apache Kafka kūrėjų, o testų generavimas išskirstytos sistemos algoritmui būtų perdaug sudėtingas dėl nedeterministionio algoritmo veikimo laiko atžvilgiu \cite{davis2020extreme}.
+		Dėl šių priežasčiu rinksimės kitą formalaus verifikavimo metodą -- Modeliu paremta pėdsakų tikrinimą (angl. {\it Model-Based Trace-Checking}) metodu \cite{howard2011modelbased}.
 		Metode aprašomi šie žingsniai:
 		\begin{enumerate}
 			\item{Įgyvendinti programą ir paprastus testus.}
@@ -127,6 +128,9 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Antrame žingsnyje pridėsime kodą, kuris registruos sistemos būseną ir įrašinės ją į tekstinius failus.
 		Trečiame žingsnyje sukursime formalią specifikaciją naudodamiesi TLA\textsuperscript{+}.
 		Ketvirtame žingsnyje, naudodami TLC, patikrinsime ar sistemos būsenos failo duomenys yra adekvatūs pagal sukurtą formalią specifikaciją. Apdorosime būsenos duomenis ir pasinaudodami TLC tikrinsime ar tokią būseną galima pasiekti pagal mūsų sukurtą specifikaciją.
+
+		Šis metodas mums leis patikrinti algoritmo sukurtus pėdsakus po programos vykdymo išvengiant nedeterministinio algoritmos vykdymo kuris dažniausiai kyla išskirstytose sistemose, kuomet skirtingi mazgai baigia darbą nevienodu metu.
+		Taip pat šis metodas jau buvo sėkmingai taikytas verifikuojant kitas išskirstytų sistemų specifikacimas \cite{davis2020extreme}.
 
 
 	\sectionnonum{Temos aktualumas bei naujumas}
