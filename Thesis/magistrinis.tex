@@ -51,7 +51,7 @@
 			\item{Našumas (angl. {\it Efficiency}) -- sistemos vartotojų skaičius dažniausiai būna nepastovus, jis kinta dienos metu arba atitinkamais metų periodais. Išskirstytos sistemos padeda užtikrinti našų įrangos resursų naudojimą sumažinant įrangos galingumą (kai vartotojų skaičius yra nedidelis) bei padidinant galingumą (kai sistemos apkrova padidėja).}
 		\end{enumerate}
 		Šiuo metu yra sukurta keletas atviro kodo išskirstytų sistemų, padedančių apdoroti duomenis realaus laiku (ActiveMQ \cite{snyder2011activemq}, Apache Spark \cite{spark2018apache}, Apache Storm \cite{iqbal2015big}).	
-		Šio tipo sistemos naudojamos apdoroti nesąžiningus piniginius sandorius finansiniame sektoriuje \cite{fraud}, vartotojų veiksmams interneto puslapyje sekti \cite{tracking}, IoT įrenginių duomenims valdyti \cite{iot}, bei kitais atvėjais, kai didelio kiekio duomenų apdorojimas realiu laiku yra svarbu. 
+		Šio tipo sistemos naudojamos apdoroti nesąžiningus piniginius sandorius finansiniame sektoriuje \cite{fraud}, vartotojų veiksmams interneto puslapyje sekti \cite{tracking}, IoT įrenginių duomenims valdyti \cite{iot}, bei kitais atvejais, kai didelio kiekio duomenų apdorojimas realiu laiku yra svarbu. 
 		Viena iš tokių išskirstytų sistemų yra Apache Kafka (toliau -- Kafka) \cite{kfk}.
 
 
@@ -63,17 +63,25 @@
 		Kafka platforma yra plačiai naudojama įvairiose srityse, tokiose kaip: žurnalistika, debesijos paslaugos, muzikos srauto paslaugos, telekomunikacijos, bankinės paslaugos ir daugelis kitų \cite{kfk}.
 
 
+		Šiuo metu Kafka naudoja Apache ZooKeeper saugyklą \cite{junqueira2013zookeeper}, kurioje yra laikomi metaduomenys apie mazgų vieta išskirstytame tinkle ir mazgų konfigūracija.
+		Minėti duomenys yra laikomi ne pačioje Kafka platformoje, bet atskirame ZooKeeper klasteryje.
+		Apache Kafka komanda nori panaikinti priklausomybę nuo Apache ZooKeeper ir valdyti metaduomenis pačioje Kafka platformoje \cite{metadata}.
+		Šiuo metu Kafka kūrėjai yra pradėje įgyvendinti savarankiškai tvarkomą metaduomenų kvorumą kurio pagrindinė dalis bus į Raft protokolą panaši susitarimo algoritmo realizacija pritaikyta pagal Kafka sistemą kuris bus naudojamas replikuoti metaduomenims \cite{qourum}.
+		Pats metaduomenų kvorumas ilgainiui pakeis Apache ZooKeeper Kafka platformoje.
+		
+
 		Norėdami užtikrinti Kafka platformos kokybę, kūrėjai yra įgyvendinę skirtingų testų \cite{kfkGH}.
 		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo \cite{819971}.
 		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
 		Net ir paskyrus daugiau resursų testavimui sudėtinguose sistemose, tokiose kaip Kafka, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
-		Todėl norint atrasti subtilesnius sisteminius sutrikimus tenka naudoti kitus metodus, tokius kaip formalus specifikavimas ir verifikavimas.
+		Norint rasti subtilesnius sutrikimus pačioje sistemos architektūroje, tokius kaip dalinis mazgų neveikimas, lygiagrečių algoritmų klaidos naudojant keletą procesų, gedimų atsparumo ir atsistatymo po gedimo algoritmų klaidos bei kitiems kraštutiniams veikimo scenarijams \cite{newcombe2014use} rasti ir išspręsti turime ieškoti kitų būdų. 
+		Vienas iš jų formalios specifikacijos.
 
 
-		Formalios specifikacijos yra matematinės technikos skirtos apibūdinti sistemų elgseną ir padėti kuriant jų dizainą naudojant griežtas ir veiksmingas priemones \cite{holzmann1995improvement}.
+		Formalios specifikacijos yra matematinės technikos skirtos apibūdinti sistemų elgseną ir padėti kuriant jas naudojant griežtas ir veiksmingas priemones \cite{holzmann1995improvement}.
 		Turint sistemos formalią specifikaciją galima ja pasinaudoti vykdant formalų verifikavimą ir parodant, kad algoritmas yra adekvatus pagal sukurtą specifikaciją.
-		Sudarinėti formalią sistemos specifikaciją galima ir nepradėjus įgyvendinti sistemos, turint tik jos dizainą. 
-		Formaliai verifikuota specifikacija suteikia informacijos apie dizaino korektiškumą ir įgalina objektyviai koreguoti sistemos dizainą dar prieš pradedant jį įgyvendinti.
+		Sudarinėti formalią sistemos specifikaciją galima ir nepradėjus įgyvendinti sistemos, turint tik jos architektūrą. 
+		Formaliai verifikuota specifikacija suteikia informacijos apie architektūros korektiškumą ir įgalina objektyviai koreguoti sistemos architektūrą dar prieš pradedant ją įgyvendinti.
 		Formalios specifikacijos sudaromos pasinaudojant tam tikromis kalbomis arba įrankiais.
 		Viena iš tokių formalaus specifikavimo kalbų yra TLA\textsuperscript{+} \cite{lamport2002specifying}.
 		
@@ -105,7 +113,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Viena iš jų Z formalaus specifikavimo kalba \cite{O’Regan2017}, kuri sėkmingai buvo naudota specifikuoti 
 		UNIX failų sistemai \cite{bowen1996formal}, bei Oxfordo universiteto paskirstytų skaičiavimų projekte \cite{bowen1996formal}.
 		Dar viena formalaus specifikavimo kalba yra VDA \cite{bjorner1978vienna}, kuria buvo specifikuoti bendros atminties sinchronizavimo algoritmai \cite{Slaats1998}.
-		Tačiau šiam darbui buvo pasirinkta TLA\textsuperscript{+} kalba dėl jos pritaikymo išskirstytoms sistemoms naudojant būsenų mašiną \cite{lamport2002specifying}, esamų sėkimingo pritaikymo pavyzdžių specifikuojant išskirstytas sistemas \cite{newcombe2014use,kfkTla,rafttla,jiryu2020extreme} bei gausaus TLA\textsuperscript{+} įrankių pasirinkimo.
+		Tačiau šiam darbui buvo pasirinkta TLA\textsuperscript{+} kalba dėl jos pritaikymo išskirstytoms sistemoms naudojant būsenų mašiną \cite{lamport2002specifying}, esamų sėkmingo pritaikymo pavyzdžių specifikuojant išskirstytas sistemas \cite{newcombe2014use,kfkTla,rafttla,jiryu2020extreme} bei gausaus TLA\textsuperscript{+} įrankių pasirinkimo.
 		
 
 
@@ -113,23 +121,24 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Kartais gali nutikti taip, kad algoritmo realizacija neatitiks jo reikalavimų.
 		Mūsų sudaryta specifikacija gali būti adekvati pagal pateiktus reikalavimus, tačiau sistemos kūrėjai šiuos reikalavimus gali įgyvendinti nekorektiškai.
 		Norint to išvengti turime patikrinti ar sistemos įgyvendinimas atitinka specifikaciją.
-		Yra skirtingų būdų patikrinti ar specifikacija atitinka realizacija: specifikacijos ir realizacijos rašymas ta pačia programavimo kalba \cite{kern1999formal}, programinio kodo generavima naudojantis specifikacija \cite{houhou2017framework}, testų generavimas naudojant specifikaciją \cite{utting2010practical}.
-		Mūsų darbo atveju šie metodai netika, nes realizuotas kodas jau bus parašytas Apache Kafka kūrėjų, o testų generavimas išskirstytos sistemos algoritmui būtų perdaug sudėtingas dėl nedeterministionio algoritmo veikimo laiko atžvilgiu \cite{davis2020extreme}.
-		Dėl šių priežasčiu rinksimės kitą formalaus verifikavimo metodą -- Modeliu paremta pėdsakų tikrinimą (angl. {\it Model-Based Trace-Checking}) metodu \cite{howard2011modelbased}.
+		Yra skirtingų būdų patikrinti ar specifikacija atitinka realizacija: specifikacijos ir realizacijos rašymas ta pačia programavimo kalba \cite{kern1999formal}, programinio kodo generavimas naudojantis specifikacija \cite{houhou2017framework}, testų generavimas naudojant specifikaciją \cite{utting2010practical}.
+		Mūsų darbo atveju šie metodai netinka, nes realizuotas kodas jau bus parašytas Apache Kafka kūrėjų, o testų generavimas išskirstytos sistemos algoritmui būtų per daug sudėtingas dėl nedeterminuoto algoritmo veikimo laiko atžvilgiu \cite{davis2020extreme}.
+		Dėl šių priežasčiu rinksimės kitą formalaus verifikavimo metodą -- Modeliu paremta pėdsakų tikrinimą (angl. {\it Model-Based Trace-Checking}) \cite{howard2011modelbased}.
 		Metode aprašomi šie žingsniai:
 		\begin{enumerate}
 			\item{Įgyvendinti programą ir paprastus testus.}
 			\item{Pridėti kodą, kuris sektų programos būseną ir įrašytų ją į failą.}
 			\item{Sukurti formalią specifikaciją parašytam kodui.}
-			\item{Paleisti sistemos būsenos failą per įrankius skirtus patikrinti ar sistemos būsena, failo duomenys yra adekvatūs pagal formalią specifikaciją.}
+			\item{Perleisti sistemos būsenos failą per įrankius skirtus patikrinti ar sistemos būsenos failo duomenys yra adekvatūs pagal formalią specifikaciją.}
 		\end{enumerate}
 
 		Šiame darbe pirmą žingsnį praleisime, nes specifikuosime jau įgyvendintus algoritmus Kafka platformoje.
 		Antrame žingsnyje pridėsime kodą, kuris registruos sistemos būseną ir įrašinės ją į tekstinius failus.
 		Trečiame žingsnyje sukursime formalią specifikaciją naudodamiesi TLA\textsuperscript{+}.
-		Ketvirtame žingsnyje, naudodami TLC, patikrinsime ar sistemos būsenos failo duomenys yra adekvatūs pagal sukurtą formalią specifikaciją. Apdorosime būsenos duomenis ir pasinaudodami TLC tikrinsime ar tokią būseną galima pasiekti pagal mūsų sukurtą specifikaciją.
+		Ketvirtame žingsnyje, naudodami TLC, patikrinsime ar sistemos būsenos failo duomenys yra adekvatūs pagal sukurtą formalią specifikaciją. 
+		Apdorosime būsenos duomenis ir pasinaudodami TLC tikrinsime ar tokią būseną galima pasiekti pagal mūsų sukurtą specifikaciją.
 
-		Šis metodas mums leis patikrinti algoritmo sukurtus pėdsakus po programos vykdymo išvengiant nedeterministinio algoritmos vykdymo kuris dažniausiai kyla išskirstytose sistemose, kuomet skirtingi mazgai baigia darbą nevienodu metu.
+		Šis metodas mums leis patikrinti algoritmo sukurtus pėdsakus po programos vykdymo išvengiant nedeterminuoto algoritmo vykdymo kuris dažniausiai kyla išskirstytose sistemose, kuomet skirtingi mazgai baigia darbą nevienodu metu.
 		Taip pat šis metodas jau buvo sėkmingai taikytas verifikuojant kitas išskirstytų sistemų specifikacimas \cite{davis2020extreme}.
 
 
@@ -153,8 +162,7 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 		Jeigu sekėjas nesulaukia signalo iš lyderio, sistemoje prasideda naujo lyderio rinkimas.
 		
 		
-		Kafka pasiūlyto Raft algoritmo realizacija būtų naudojama duomenų replikavimui \cite{raftimpl}.
-		Nors Raft algoritmui jau yra sukurta formalių specifikacijų TLA\textsuperscript{+} kalba \cite{rafttla}, tačiau pasiūlyta realizacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
+		Nors baziniam Raft algoritmui jau yra sukurta formalių specifikacijų TLA\textsuperscript{+} kalba \cite{rafttla}, tačiau pasiūlyta realizacija skiriasi nuo iki šiol sukurtų specifikacijų, todėl reiktų sukurti atskirą formalią specifikaciją bei ją verifikuoti.
 
 
 		Kafka sutrikimų sekimo sistemoje yra aprašoma ir kitų Kafka sutrikimų \cite{kfkis} , kuriuos būtų galima formaliai specifikuoti ir verifikuoti taip parodant algoritmų problemas.
@@ -186,10 +194,10 @@ TLA\textsuperscript{+} kalba yra skirta kurti konkurencinių ir išskirstytų si
 	
 	\sectionnonum{Uždaviniai}
 		\begin{enumerate}
-			\item{Formaliai specifikuoti pasirinktus Kafka platformos algoritmus naudojant TLA\textsuperscript{+} specifikavimo kalbą. Šiame žingsnyje formaliai aprašysme pasirinktus algoritmus ir jų savybes, kad galėtume patikrinti jų korektiškumą.}
+			\item{Formaliai specifikuoti pasirinktus Kafka platformos algoritmus naudojant TLA\textsuperscript{+} specifikavimo kalbą. Šiame žingsnyje formaliai aprašysime pasirinktus algoritmus ir jų savybes, kad galėtume patikrinti jų korektiškumą.}
 			\item{Verifikuoti ar pagal sukurtą specifikaciją Kafka platforma veikia korektiškai. Verifikacija bus atliekama naudojant modeliu paremtu pėdsakų tikrinimo (angl. {\it Model-Based Trace-Checking}) metodu. }
-			\item{Esant poreikiui įrodyti specifikacijos savybes naudojant TLAPS. Šios užduoties prireik, jeigu formalios specifikacijos tikrinimas TLC modelio tikrintoju užtruktų perdaug laiko.}
-			\item{Surasti kitas paskirstytas sistemas, kuriose yra naudojami šiame darbe formaliai specifikuoti algoritmai. Šiuo uždaviniu parodytume, kad šis darbas būtų pritaikomas didesniai aibei paskirstytų sistemų, ne tik Apache Kafka.}
+			\item{Esant poreikiui įrodyti specifikacijos savybes naudojant TLAPS. Šios užduoties prireik, jeigu formalios specifikacijos tikrinimas TLC modelio tikrintoju užtruktų per daug laiko.}
+			\item{Surasti kitas paskirstytas sistemas, kuriose yra naudojami šiame darbe formaliai specifikuoti algoritmai. Šiuo uždaviniu parodytume, kad šis darbas būtų pritaikomas didesnei aibei paskirstytų sistemų, ne tik Apache Kafka.}
 		\end{enumerate}
 	
 	\sectionnonum{Laukiami rezultatai}

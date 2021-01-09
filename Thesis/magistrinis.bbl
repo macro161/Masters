@@ -398,6 +398,7 @@
       \strng{authorbibnamehash}{fdd6445796f0969a2794c861f1cdaf0c}
       \strng{authornamehash}{fdd6445796f0969a2794c861f1cdaf0c}
       \strng{authorfullhash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \field{extraname}{1}
       \field{labelalpha}{Gus04}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
@@ -407,6 +408,35 @@
       \field{note}{Pristatymas konferencijoje}
       \field{title}{Hardening Kafka Replication}
       \field{year}{2004}
+    \endentry
+    \entry{qourum}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fdd6445796f0969a2794c861f1cdaf0c}{%
+           family={Gustafson},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{fullhash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{bibnamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authorbibnamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authornamehash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \strng{authorfullhash}{fdd6445796f0969a2794c861f1cdaf0c}
+      \field{extraname}{2}
+      \field{labelalpha}{Gus20}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Raft Protocol for the Metadata Quorum}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://cwiki.apache.org/confluence/display/KAFKA/KIP-595\%3A+A+Raft+Protocol+for+the+Metadata+Quorum
+      \endverb
+      \verb{url}
+      \verb https://cwiki.apache.org/confluence/display/KAFKA/KIP-595%5C%3A+A+Raft+Protocol+for+the+Metadata+Quorum
+      \endverb
     \endentry
     \entry{howard2011modelbased}{misc}{}
       \name{author}{5}{}{%
@@ -690,6 +720,36 @@
       \field{pages}{arXiv\bibrangedash 2006}
       \range{pages}{-1}
     \endentry
+    \entry{junqueira2013zookeeper}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c4135a1bf688294bb7590ad99a5392ab}{%
+           family={Junqueira},
+           familyi={J\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=85be743b01aead39c2e95bfc9228cc8b}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {" O'Reilly Media, Inc."}%
+      }
+      \strng{namehash}{3962e269b27dbaff895e53232394d4db}
+      \strng{fullhash}{3962e269b27dbaff895e53232394d4db}
+      \strng{bibnamehash}{3962e269b27dbaff895e53232394d4db}
+      \strng{authorbibnamehash}{3962e269b27dbaff895e53232394d4db}
+      \strng{authornamehash}{3962e269b27dbaff895e53232394d4db}
+      \strng{authorfullhash}{3962e269b27dbaff895e53232394d4db}
+      \field{labelalpha}{JR13}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ZooKeeper: distributed process coordination}
+      \field{year}{2013}
+    \endentry
     \entry{862209}{article}{}
       \name{author}{2}{}{%
         {{hash=fc0827a6465de093b631cab316e9c6ce}{%
@@ -910,6 +970,34 @@
       \verb https://doi.org/10.1145/177492.177726
       \endverb
       \keyw{liveness properties,safety properties,concurrent programming}
+    \endentry
+    \entry{metadata}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b2382ef11f538b76c07a73828a2c04ed}{%
+           family={Maccabe},
+           familyi={M\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2382ef11f538b76c07a73828a2c04ed}
+      \strng{fullhash}{b2382ef11f538b76c07a73828a2c04ed}
+      \strng{bibnamehash}{b2382ef11f538b76c07a73828a2c04ed}
+      \strng{authorbibnamehash}{b2382ef11f538b76c07a73828a2c04ed}
+      \strng{authornamehash}{b2382ef11f538b76c07a73828a2c04ed}
+      \strng{authorfullhash}{b2382ef11f538b76c07a73828a2c04ed}
+      \field{labelalpha}{Mac20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache Kafka Needs No Keeper: Removing the Apache ZooKeeper Dependency}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.confluent.io/blog/removing-zookeeper-dependency-in-kafka/
+      \endverb
+      \verb{url}
+      \verb https://www.confluent.io/blog/removing-zookeeper-dependency-in-kafka/
+      \endverb
     \endentry
     \entry{newcombe2014use}{article}{}
       \name{author}{6}{}{%
