@@ -1,0 +1,13 @@
+Del kliuties formaliai verifikuoti, dar nera implementuota
+https://issues.apache.org/jira/browse/KAFKA-9876
+taciau panasu kad darbas vyksta greitai kodas 
+merginamas i masteri
+
+Kiti possible verifikavimo budai
+
+Kur galima pasiziureti kazkoki roadmap'a del TLA+
+ir formalaus specifikavimo in general
+
+Ar darba tureciau fokusutui tik aplink Raft algoritma
+tuomet turbut nebus kitu sistemu reikalingu tam
+
