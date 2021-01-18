@@ -11,3 +11,27 @@ ir formalaus specifikavimo in general
 Ar darba tureciau fokusutui tik aplink Raft algoritma
 tuomet turbut nebus kitu sistemu reikalingu tam
 
+////////////////////////////////////////////////
+
+Suprasti base Raft TLA+
+
+Suprati skirtumus tarp Kafka Raft ir base Raft
+
+Paieskoti kitu Raft modifikaciju nuo base
+
+Panasu algortimu korektiskumas ir performance
+
+Perskaityt Raft disertacija
+
+Atskiras dokumentas pradeti angliskai
+
+Atkeipti demesi i struktura skaitant staipsnius, 
+assumint kad ir as rasysiu
+
+Izabele irodymu sistema
+
+https://isabelle.in.tum.de/
+
+10 1.15
+
+https://www.youtube.com/watch?v=Uav5jWHNghY&ab_channel=MartinKleppmann
