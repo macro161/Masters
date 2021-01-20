@@ -32,6 +32,6 @@ Izabele irodymu sistema
 
 https://isabelle.in.tum.de/
 
-10 1.15
+9/27 1.21
 
 https://www.youtube.com/watch?v=Uav5jWHNghY&ab_channel=MartinKleppmann

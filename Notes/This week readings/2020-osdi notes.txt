@@ -1,0 +1,12 @@
+4.1 Pasigilinti kas per bug'ai pazymeti petrausko 
+
+4.3 galbut butu galima patikrinti ar partial partition failure 
+problema isliks po Raft implementacijos
+
+4.4 ar raft implementacijoje bus daromi tie
+pattys assumtionai apie node'u pasiekiamuma
+
+Atrodo kaip neelegantiškas būdas spręsti problemą
+Kas nutiks kai Nifty pats nulus
+Gal yra budu kaip patys node'ai sekmingai
+apsisaugotu nuo partial failu
