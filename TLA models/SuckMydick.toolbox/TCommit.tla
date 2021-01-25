@@ -1,4 +1,4 @@
-------------------------------- MODULE weding -------------------------------
+------------------------------ MODULE TCommit ------------------------------
 (***************************************************************************)
 (* This specification is explained in "Transaction Commit", Lecture 5 of   *)
 (* the TLA+ Video Course.                                                  *)
@@ -75,8 +75,7 @@ THEOREM TCSpec => [](TCTypeOK /\ TCConsistent)
   (* TCConsistent.                                                         *)
   (*************************************************************************)
 
-
 =============================================================================
 \* Modification History
-\* Last modified Sat Jan 23 17:42:14 EET 2021 by macro
-\* Created Mon Jan 18 22:57:04 EET 2021 by macro
+\* Last modified Sat Jan 23 22:29:49 EET 2021 by macro
+\* Created Sat Jan 23 22:29:35 EET 2021 by macro

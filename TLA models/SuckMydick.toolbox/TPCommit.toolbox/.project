@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>weding</name>
+	<name>TPCommit</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,14 +16,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>TwoPhase.tla</name>
+			<name>TPCommit.tla</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TwoPhase.tla</locationURI>
-		</link>
-		<link>
-			<name>weding.tla</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/weding.tla</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TPCommit.tla</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
