@@ -1,5 +1,0 @@
-Kaip bus surastos kitos paskirstytos sistemos
-kuriose bus naudojamas Raft algoritmas
-
-Buti labiau specifiskam kokie kiti algoritmai 
-bus specifikuojami

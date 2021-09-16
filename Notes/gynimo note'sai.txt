@@ -1,3 +1,0 @@
-TLA alternatyvos ir kodel naudojom TLA
-
-Kodel logu verifikacija, net per didele sistema

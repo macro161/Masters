@@ -1,0 +1,142 @@
+Kaip bus surastos kitos paskirstytos sistemos
+kuriose bus naudojamas Raft algoritmas
+
+Buti labiau specifiskam kokie kiti algoritmai 
+bus specifikuojami
+
+----------------------------------------------
+
+atrinksit labiausiai atrodytų tinkamas tyrimui. max 3 - 5.
+
+-----------------------------------------------
+
+TLA alternatyvos ir kodel naudojom TLA
+
+Kodel logu verifikacija, net per didele sistema
+
+--------------------------------------------------
+
+Del kliuties formaliai verifikuoti, dar nera implementuota
+https://issues.apache.org/jira/browse/KAFKA-9876
+taciau panasu kad darbas vyksta greitai kodas 
+merginamas i masteri
+
+Kiti possible verifikavimo budai
+
+Kur galima pasiziureti kazkoki roadmap'a del TLA+
+ir formalaus specifikavimo in general
+
+Ar darba tureciau fokusutui tik aplink Raft algoritma
+tuomet turbut nebus kitu sistemu reikalingu tam
+
+////////////////////////////////////////////////
+
+Suprasti base Raft TLA+
+
+Suprati skirtumus tarp Kafka Raft ir base Raft
+
+Paieskoti kitu Raft modifikaciju nuo base
+
+Panasu algortimu korektiskumas ir performance
+
+Perskaityt Raft disertacija
+
+Atskiras dokumentas pradeti angliskai
+
+Atkeipti demesi i struktura skaitant staipsnius, 
+assumint kad ir as rasysiu
+
+Izabele irodymu sistema
+
+https://isabelle.in.tum.de/
+
+9/27 1.21
+
+https://www.youtube.com/watch?v=Uav5jWHNghY&ab_channel=MartinKleppmann
+
+---------------------------------
+
+Pirma syki pasaudojus savoka prideti citata
+
+Sutvarkyti citatas...
+
+Suziureti adekvatumo korektiskumo naudojima
+
+Del sablonu nesakyti uztikrintai, naudoti ,,Jeigu"
+
+---------------------------------------------
+
+-Pastraipos
+-Ziureti savokas
+-Data ir control flow
+-Esmines isskirstytu sistemu savybes
+-Stiliaus klaidos
+-Korektiskas pagal sukurtas savybes(safty, liveness)
+-Model Checker, TLAPS
+-Parasyti apie TLA+ irodynejima
+-Kodel pasirinkau TLA+
+-Enterpris integration patterns
+    -CQRS
+    -Publish subscribe
+
+----------------------------------------------
+
+Kaip bus surastos kitos paskirstytos sistemos
+kuriose bus naudojamas Raft algoritmas
+
+Buti labiau specifiskam kokie kiti algoritmai 
+bus specifikuojami
+
+Teigiama, kad "Šiuo metu yra sukurta keletas 
+atviro kodo išskirstytų sistemų, padedančių 
+apdoroti realaus laiko duomenis", bet nėra aišku 
+nei kokios tos sistemos (išskyrus vieną paminėtą), 
+nei kas tas realus laikas, nei apie kokius duomenis 
+kalbama.
+
+Teigiama, kad "norint atrasti subtilesnius 
+sisteminius sutrikimus tenka naudoti kitus metodus, 
+tokius kaip formalus specifikavimas ir 
+verifikavimas", bet šis teiginys turėtų
+bti išplėtotas, galbūt pagrįstas pavyzdžiais.
+
+Nėra aišku kas tas Raft algoritmas ir 
+kodėl jis atsiranda tik ketvirtame puslapyje, 
+įvade apie jį neminint.
+
+Rašoma, kad "pasinaudosime modeliu parem tu 
+pėdsakų tikrinimo (angl. Model-Based Trace-Checking) 
+metodu", bet nepateikiama argumentacija kodėl.
+
+------------------------------------------------
+
+Possible things to look into:   
+https://issues.apache.org/jira/browse/KAFKA-9957?jql=project%20%3D%20KAFKA%20AND%20status%20in%20(Open%2C%20%22In%20Progress%22%2C%20Resolved)%20AND%20priority%20%3D%20Critical%20AND%20resolution%20%3D%20Unresolved%20AND%20created%20%3E%3D%202020-01-01%20AND%20created%20%3C%3D%202020-11-01%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC
+
+https://github.com/hachikuji/kafka-specification
+https://www.slideshare.net/ConfluentInc/hardening-kafka-replication
+    
+-------Hypervisor level logai
+
+
+Log replication Kafka sprendimus ir kiti replication algo naudojami kituose sistemos
+
+Kafka patternai pritaikomi ir kitus(nedrasu dar)
+
+Ar galima suvesti i invariantus nes lengviau irodyti
+
+Kafka jau sukurtos teoremu irodynejimas
+
+-----------------
+
+Ka tiksliai darysi darbe?
+    Modelio sudarymas
+    Teoremų įrodynejimasi
+    Rezultatų patikrinimai
+
+Jeigu irodyti reikia parasyti kaip irodyti
+
+Apibrezti problemas, tai ne tik pratesti problemas
+
+susrasyti savaokas ir aptarti tas savaokas
+
